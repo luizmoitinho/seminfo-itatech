@@ -1,6 +1,5 @@
 <?php 
     require_once('funcoes.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -45,21 +44,21 @@
                     </div>
                     <div id="cronometro" class="flex-row">
                         <div class="flex-column">
-                            <span class="formato"> <?php echo diasRestantes();?></span>
+                            <span class="formato"> <?php echo DiasRestantes();?></span>
                             <span class="info">Dias</span>
                         </div>
                         <div class="flex-column">
-                            <span class="formato"> <?php echo horasRestantes();?></span>
+                            <span class="formato"> <?php echo HorasRestantes();?></span>
                             <span class="info">Horas</span>
                         </div>
                         <span class="formato-pontos">:</span>
                         <div class="flex-column">
-                            <span class="formato"><?php  echo minRestantes();?></span>
+                            <span class="formato"><?php  echo MinutosRestantes();?></span>
                             <span class="info">Minutos</span>
                         </div>
                         <span class="formato-pontos">:</span>
                         <div class="flex-column">
-                            <span class="formato"><?php echo segAtual();?></span>
+                            <span class="formato"><?php echo SegundosRestantes();?></span>
                             <span class="info">Segundos</span>
                         </div>
                     </div>
@@ -72,5 +71,4 @@
 
     </main>
 </body>
-
 </html>

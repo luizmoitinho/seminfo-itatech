@@ -1,51 +1,37 @@
 <?php
+
 date_default_timezone_set('America/Sao_Paulo');
+$Resto = 0;
 
-define("diaSeminfo",'2');
+function DiasRestantes(){
+    global $Resto;
+    $dataAtual = date("Y-m-d H:i:s");
+    $dataSeminfo= strtotime("2019-12-04 8:00:00");
+    $dataAtual = strtotime($dataAtual);
 
-function diaAtual(){
-    return date('d');
-}
-function horaAtual(){
-    echo date('H');
-}
+    $Auxiliar1 = $dataSeminfo - $dataAtual;
 
-function minAtual(){
-    echo date('m');
-}
+    $diasRestantes = floor($Auxiliar1/86400);
+    $Resto = $Auxiliar1 % 86400;
 
-function segAtual(){
-    echo date('s');
+    return $diasRestantes;
 }
 
-function diasRestantes(){
-    $dataAtual=date("d/m/Y");
-    $dataAtual =  explode('/',$dataAtual);
-    // Converte a data para segundos
-    $dataAtual  = strtotime($dataAtual[2]."-".$dataAtual[1]."-".$dataAtual[0]);
-    $dataSeminfo= strtotime("2019-12-2");
-    //Converte a data para dias
-    $diasRestantes =  floor(($dataSeminfo - $dataAtual)/86400);
-    if($diasRestantes<=0)
-        return "0";
-    else
-        return  $diasRestantes;;
+function HorasRestantes(){
+    global $Resto;
+    $horaAtual = floor($Resto/3600);
+    $Resto = $Resto % 3600;
+    return $horaAtual; 
 }
 
-function horasRestantes(){
-    $horaAtual = date("H");
-    return (diasRestantes()*24) - $horaAtual; 
-
-}
-
-function minRestantes(){
-    $minutoAtual = date("m");
+function MinutosRestantes(){
+    global $Resto;
+    $minutoAtual = floor($Resto/60);
+    $Resto = $Resto % 60;
     return $minutoAtual;
 }
 
-function segsRestantes(){
-    $sgAtual = date("s");
-    return $segAtual;
+function SegundosRestantes(){
+    global $Resto;
+    return $Resto;
 }
-
-

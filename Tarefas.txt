@@ -1,0 +1,7 @@
+O codigo precisa ser refatorado, porém atente-se no que tem que ser feito!
+ - Escolher a cor que tem a haver com a logo da seminfo
+ - Forma como será expostos os itens
+ - Ao clicar no link devera redirecionar para a mesma pagina mas em cima de uma seção( dica:  use o "for")
+ - Campo de patrocinadores
+ - Imagem da UFS para por de forma fixed
+ - Ajustes na responsividade

@@ -1,8 +1,6 @@
 <?php
-
 date_default_timezone_set('America/Sao_Paulo');
 $Resto = 0;
-<<<<<<< HEAD
 $cronometro =  array();
 $cronometro ['dias'] = DiasRestantes();
 $cronometro ['horas'] = HorasRestantes();
@@ -11,8 +9,6 @@ $cronometro ['seg'] = SegundosRestantes();
 echo json_encode($cronometro);
 
 function DiferencaDatas(){
-
-function DiasRestantes(){
     global $Resto;
     $dataAtual = date("Y-m-d H:i:s");
     $dataSeminfo= strtotime("2019-12-04 8:00:00");
@@ -21,7 +17,13 @@ function DiasRestantes(){
     return $diferencaDatas;
 }
 
-
+function DiasRestantes(){
+    global $Resto;
+    $difDatas =  DiferencaDatas();
+    $diasRestantes = floor($difDatas/86400);
+    $Resto = $difDatas % 86400;
+    return $diasRestantes;
+}
 
 function HorasRestantes(){
     global $Resto;
@@ -41,3 +43,4 @@ function SegundosRestantes(){
     global $Resto;
     return $Resto;
 }
+

@@ -5,7 +5,6 @@
 
 function atualizarCronometro(){
     getCronometro(function(res){
-        console.log(res);
         let cronometro = JSON.parse(res);
         document.getElementById('dias').textContent = cronometro['dias'];
         document.getElementById('horas').textContent= cronometro['horas'];
@@ -25,4 +24,14 @@ function getCronometro(cronometro){
             alert('Ocorreu um problema na conexao ! :/');
         }
     });
+}
+
+
+
+function transformIcon() {
+    let icons_bar = document.getElementsByClassName("icon-bar");
+    if(icons_bar[0].style.transform=="")
+        icons_bar[0].style.transform=" rotate(45deg) translate(3px, -6px)";
+    else
+        icons_bar[0].style.transform=""
 }

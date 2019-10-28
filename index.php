@@ -13,32 +13,48 @@
     <!--Link do css proprio-->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+ 
+
 </head>
 
 <body>
-    <header id="cabecalho" class="navbar navbar-extend-lg">
-        <div id="logo" class="nav justify-content-start">
+
+    <nav id="cabecalho " class="navbar navbar-expand-lg bg-gradient">
+        <a id="logo" class="nav justify-content-start">
             <span>Itatech <span id="jr">JR</span></span>
+        </a>
+        <div  class="navbar-toggler" onclick="transformIcon()" data-toggle="collapse" data-target="#barra-navegacao" aria-controls="barra-navegacao" aria-expanded="false" aria-label="Alterna navegação">
+              <span id="btn-menu">
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+              </span>
         </div>
-        <nav id="barra-navegacao" class="navbar- justify-content-end">
-            <span class="nav-item">
-                <a href="">COLABORADORES</a>
-            </span>
-            <span class="nav-item">
-                <a href="">PALESTRAS</a>
-            </span>
-            <span class="nav-item">
-                <a href="">DATAS</a>
-            </span>
-        </nav>
-    </header>
+        <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
+            <ul class="nav navbar-nav">
+                <li >
+                    <a  href="#">Apoio</a>
+                </li>
+                <li >
+                    <a href="#">Paletras</a>
+                </li>
+                <li >
+                    <a  href="#">Eventos</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
     <main>
         <div class="container-fluid">
             <div class="row">
                 <div id="painel-entrada">
                     <div class="flex-column">
                         <span id="seminfo">SEMINFO 2019</span>
-                        <span id="slogan">Nos dias 2, 3 e 4 de Dezembro no Campus da UFS de Itabaiana</span>    
+                        <span id="slogan">Nos dias 4, 5 e 6 de Dezembro no Campus da UFS de Itabaiana</span>    
                     </div>
                     <div id="cronometro" class="flex-row">
                         <div class="flex-column">
@@ -64,9 +80,12 @@
             </div>
         </div>
         <div class="container">
-          
+            <div class="row">
+                <div class="info-evento">
+                
+                </div>
+            </div>
         </div>
-
     </main>
     <script src="assets/js/jquery.min.js"></script>
 

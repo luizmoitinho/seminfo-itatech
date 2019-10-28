@@ -48,7 +48,7 @@
         </div>
 
     </nav>
-    <main>
+    <main id="bg-black">
         <div class="container-fluid">
             <div class="row">
                 <div id="painel-entrada">
@@ -80,13 +80,28 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="info-evento">
-                
-                </div>
+            <div class="flex-column">
+               <div id="palestrantes" class="flex-column">
+                     <div class="fundo">
+                        <h3>Eventos</h3>
+                        <hr>
+                        <ul>
+                        </ul>
+                    </div>
+                   <div>
+                        <h3>Palestrantes</h3>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>Apoio</h3>
+                        <hr>
+                    </div>
+               <div>  
             </div>
         </div>
     </main>
+    <footer>
+</footer>
     <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/lib.js"></script>

@@ -54,7 +54,7 @@
                 <div id="painel-entrada">
                     <div class="flex-column">
                         <span id="seminfo">SEMINFO 2019</span>
-                        <span id="slogan">Nos dias 4, 5 e 6 de Dezembro no Campus da UFS de Itabaiana</span>    
+                        <span id="slogan">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana</span>    
                     </div>
                     <div id="cronometro" class="flex-row">
                         <div class="flex-column">

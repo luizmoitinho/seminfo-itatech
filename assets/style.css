@@ -77,15 +77,16 @@ body, html {
     margin-top: 2%;
 }
 #seminfo{
-    font-family: 'Press Start 2P';
+    font-family: 'Ubuntu', sans-serif,!important;
     color:#000;
-    font-size:20px; 
+    font-size:40px; 
+    font-weight: 400;
 }
 
 #slogan{
     color:#000;
-    font-size:18px;
-    font-weight: 350;
+    font-size:22px;
+    font-weight: 450;
     align-content:center;
 }
 
@@ -97,7 +98,7 @@ body, html {
     border:3px solid;
     width: 100px;
     height: 120px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 10px;
     font-weight: 600;
     display: flex;
@@ -154,7 +155,6 @@ body, html {
     width: 100%;
     background-color: red;
 }   
-
 .local-maps{
     margin-top:11%;
     z-index: 10;
@@ -165,12 +165,11 @@ body, html {
     width: 100%;
     height: 300px;
     position: relative;
-    z-index: -100;
     margin-bottom: 20%;
-    margin-top: 2%;
-
 }
-
+.painel-eventos{
+    z-index: -100;
+}
 .informacoes div{
     margin-top:5%;
 
@@ -179,7 +178,26 @@ body, html {
     background-color: rgb(204, 203, 203);
     height: 500px;
 }
+.info-seminfo{
+    color:rgb(93, 91, 91);
+    border: 2px solid #fff;
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.topico-seminfo{
+    padding-left:20px ;
+    padding-right:20px ;
+    font-weight: 300;
+    font-size:60px;
 
+
+
+
+}
 .icon-patrocinadores{
     width: 100px;
     height: 100px;
@@ -244,6 +262,7 @@ body, html {
     text-decoration: line;
 }
 footer{
+    margin-top:2%;
     bottom:0;
     height: 400px;
     background: rgb(155, 155, 155);

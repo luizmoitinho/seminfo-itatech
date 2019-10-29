@@ -79,10 +79,18 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fundo-local flex-column">
+                    <iframe class="local-maps"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9879.486491068668!2d-37.43711892562412!3d-10.682208047209048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1572313589137!5m2!1spt-BR!2sbr" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div> 
+            </div>
+        </div>
+    
         <div class="container">
             <div class="flex-column">
                <div id="palestrantes" class="flex-column">
-                     <div class="fundo">
+                     <div class="">
                         <h3>Eventos</h3>
                         <hr>
                         <ul>
@@ -100,6 +108,7 @@
             </div>
         </div>
     </main>
+
     <footer>
 </footer>
     <script src="assets/js/jquery.min.js"></script>

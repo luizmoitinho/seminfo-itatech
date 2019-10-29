@@ -77,9 +77,9 @@ body, html {
     margin-top: 2%;
 }
 #seminfo{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     color:#000;
-    font-size:20px;   
+    font-size:20px; 
 }
 
 #slogan{
@@ -155,6 +155,21 @@ body, html {
     background-color: red;
 }   
 
+.local-maps{
+    margin-top:11%;
+    z-index: 10;
+    position: absolute;
+}
+.fundo-local{
+    background-image: url("img/ufs-toda2.jpg");
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: -100;
+    margin-bottom: 20%;
+    margin-top: 2%;
+
+}
 
 .informacoes div{
     margin-top:5%;
@@ -164,9 +179,7 @@ body, html {
     background-color: rgb(204, 203, 203);
     height: 500px;
 }
-#painel-palestrantes{
-    margin: 2%;
-}
+
 .icon-patrocinadores{
     width: 100px;
     height: 100px;
@@ -232,7 +245,7 @@ body, html {
 }
 footer{
     bottom:0;
-    height: 600px;
+    height: 400px;
     background: rgb(155, 155, 155);
 }
 

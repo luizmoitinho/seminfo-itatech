@@ -11,6 +11,7 @@ echo json_encode($cronometro);
 function DiferencaDatas(){
     global $Resto;
     $dataAtual = date("Y-m-d H:i:s");
+
     $dataSeminfo= strtotime("2019-12-11 8:00:00");
     $dataAtual = strtotime($dataAtual);
     $diferencaDatas = $dataSeminfo - $dataAtual;

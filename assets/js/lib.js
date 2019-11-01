@@ -1,15 +1,24 @@
+this.setInterval(function(){
+    atualizarCronometro()},1000)
 
-    this.setInterval(function(){
-        atualizarCronometro()},1000)
-
+    $("#painel-cronometro").hide();
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("#painel-cronometro").slideDown(900)
+        },1000)
+    })
 
 function atualizarCronometro(){
     getCronometro(function(res){
+        $("#seg").animate({
+            top:"2px"
+          });
         let cronometro = JSON.parse(res);
         document.getElementById('dias').textContent = cronometro['dias'];
         document.getElementById('horas').textContent= cronometro['horas'];
-        document.getElementById('seg').textContent = cronometro['seg'];
         document.getElementById('min').textContent = cronometro['min'];
+        document.getElementById('seg').textContent = cronometro['seg'];
+   
     });
    
 }
@@ -35,3 +44,9 @@ function transformIcon() {
     else
         icons_bar[0].style.transform=""
 }
+showCronometro();
+function showCronometro(){
+    //$("#cronometro").css("visibility","visible");
+    $("#cronometro").slideDown("slow");
+}
+

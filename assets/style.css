@@ -78,7 +78,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     padding: 3%;
-    background-color:#ccc;
+
 
 }
 #cronometro{
@@ -205,6 +205,9 @@ body, html {
     text-align: center;
     margin-top:2%;
 }
+.info-seminfo:last-child{
+    margin-bottom?2%;
+}
 .topico-seminfo{
     padding-left:20px ;
     padding-right:20px ;
@@ -276,10 +279,10 @@ body, html {
     text-decoration: line;
 }
 footer{
-    margin-top:2%;
+    margin-top:5%;
     bottom:0;
     height: 300px;
-    background: rgb(155, 155, 155);
+    background: rgb(45, 45, 58);
 }
 
 /* MEDIA QUERIES */

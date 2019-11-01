@@ -20,9 +20,9 @@
 
 </head>
 
-<body>
+<body  class="bg-gradient">
 
-    <nav  id="header" class="navbar navbar-expand-lg bg-gradient">
+    <nav  id="header" class="navbar navbar-expand-lg">
         <a id="logo" class="nav" a href="index.php">
             <span>Seminfo</span>
         </a>
@@ -53,7 +53,7 @@
     <main id="bg-black">
         <div class="container-fluid">
             <div class="row">
-                <div id="painel-cronometro" class="bg-gradient" >
+                <div id="painel-cronometro"  >
                     <div class="flex-column">
                         <span id="seminfo"> VEM AI A SEMINFO 2019</span>
                         <span id="slogan">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana</span>    
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="painel-eventos bg-gradient">
+        <div class="painel-eventos">
             <div class="container-fluid">
                 <div class="row flex-row">
                     <div class="fundo-local flex-column">
@@ -107,7 +107,7 @@
         </div>
     </main>
     <footer>
-</footer>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/lib.js"></script>

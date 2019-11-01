@@ -1,28 +1,33 @@
 *{
     margin:0;
     padding:0;
-   
 }
+
 body, html {
     width: 100%,!important;
     height: 100%,!important;
     font-family: 'Ubuntu', sans-serif,!important;
 }
-.bg-gradient{background: linear-gradient(to right,#61cb70,#61cbad)}
 
+.bg-gradient{background: linear-gradient(to right,#61b2cb,#1d65eb)}
+#header{
+    padding-left:50px;
+    padding-right:50px;
 
-
-#cabecalho{
-   padding: 0px 10px 0px 10px;
-   position: fixed;
-   width: 100%;
 }
 #logo{
-
+    font-family: 'Rochester', cursive;
     color:#fff;
-    font-size: 40px;  
-    font-weight: 600;
+    font-size: 50px;  
+    font-weight: 800;
+    font-stretch: extra-expanded;
+    text-decoration: none;
+    transition-duration: 0.8s;
 }
+#logo:hover{
+    transform: scale(1.1);
+}
+
 #jr{
     color:#fff;
     padding: 0;
@@ -42,20 +47,21 @@ body, html {
     color:#fff;
     padding: 10px;
 }
+#barra-navegacao li a:link {
+    text-decoration: none;
+    color:#fff;
+}
 
-#barra-navegacao li>a:hover {
+#barra-navegacao li a:hover {
     background-color: #fff;
     border-radius: 5px;
-    color:#000;
+    color:rgb(13, 14, 13);
     transition-duration: .5s;
 }
 #barra-navegacao li a{
     color:#fff;
 }
-#barra-navegacao li a:link {
-    text-decoration: none;
-    color:#fff;
-}
+
 
 
 /*==================     MAIN        ====================*/
@@ -65,49 +71,51 @@ body, html {
    
 }
 
-#painel-entrada{
+#painel-cronometro{
+
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3%;
+    background-color:#ccc;
 
 }
 #cronometro{
     margin-top: 2%;
+   
 }
 #seminfo{
     font-family: 'Ubuntu', sans-serif,!important;
-    color:#000;
+    color:rgb(232, 248, 6);
     font-size:40px; 
-    font-weight: 400;
+    font-weight: 700;
 }
 
 #slogan{
-    color:#000;
-    font-size:22px;
+    color:rgb(250, 251, 252);
+    font-size:25px;
     font-weight: 450;
     align-content:center;
 }
 
-.formato{
+.contorno-numeros{
     
-    color:#61cb70;
+    color:rgb(250, 251, 252);
     font-size: 40px;
     font-family: 'Rajdhani', sans-serif;
     border:3px solid;
     width: 100px;
     height: 120px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
 }   
-.formato-pontos{
-    color:#61cb70;
-
+.contorno-pontos{
+    color:rgb(250, 251, 252);
     font-weight: 700;
     font-size: 70px;
     margin-bottom: 3%;
@@ -115,7 +123,7 @@ body, html {
     padding: 10px 0px 30px 0px;
 }
 .info{
-    color:#000;
+    color:rgb(255, 255, 255);
     font-size: 18px;
 }
 .flex-row{
@@ -149,17 +157,10 @@ body, html {
     background-color:rgb(130, 248, 242);
     opacity: .9;
 }
-.img-ufs{
-    image: ;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-color: red;
-}   
-.local-maps{
-    margin-top:11%;
-    z-index: 10;
-    position: absolute;
+.painel-eventos{
+    z-index: -100;
 }
+
 .fundo-local{
     background-image: url("img/ufs-toda2.jpg");
     width: 100%;
@@ -167,12 +168,28 @@ body, html {
     position: relative;
     margin-bottom: 20%;
 }
-.painel-eventos{
-    z-index: -100;
+
+.local-maps{
+    margin-top:11%;
+    z-index: 10;
+    position: absolute;
 }
+
+.informacao-local{
+    margin-top:5%;
+    padding: 1%;
+    height: 250px;
+    color:rgb(20, 19, 19);
+    box-shadow: 5px -5px 15px #000;
+    background-color: rgb(255, 255, 255);
+    z-index: 120;
+    position: absolute;
+    justify-content: center;
+    margin-left:2%
+}
+
 .informacoes div{
     margin-top:5%;
-
 }
 .info-evento{
     background-color: rgb(204, 203, 203);
@@ -186,16 +203,13 @@ body, html {
     height: 500px;
     justify-content: center;
     text-align: center;
-    
+    margin-top:2%;
 }
 .topico-seminfo{
     padding-left:20px ;
     padding-right:20px ;
     font-weight: 300;
     font-size:60px;
-
-
-
 
 }
 .icon-patrocinadores{
@@ -230,7 +244,7 @@ body, html {
 
 }
 #btn-menu:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition-duration: 0.4s;
 }
 .icon-bar{
@@ -264,7 +278,7 @@ body, html {
 footer{
     margin-top:2%;
     bottom:0;
-    height: 400px;
+    height: 300px;
     background: rgb(155, 155, 155);
 }
 
@@ -272,11 +286,15 @@ footer{
 @media (max-width:800px){
 
     #seminfo{
-        font-size:17px;
-    }
-    .formato{
-       
+        font-weight: 500;
+        font-size:40px;
 
+    }
+    #slogan{
+        text-align:center;
+        font-size:24px;
+    }
+    .contorno-numeros{
         font-size: 50px;
         border:2px solid;
         width: 70px;
@@ -284,9 +302,7 @@ footer{
         margin: 8px;
         font-weight: 300;
     }
-    .formato-pontos{
-
-
+    .contorno-pontos{
         font-size: 50px;
         margin-bottom: 3%;
         font-weight: 700;
@@ -294,7 +310,18 @@ footer{
     .info{
         font-size: 16px;
     }
+    .local-maps{
+        margin-top:18%;
+        z-index: 10;
+        position: absolute;
+        width:600px;
+        height:250px;
+    }
+    .fundo-local{
+       
+        width: 100%;
 
+    }
  
 }
 
@@ -302,21 +329,24 @@ footer{
 
 /* MEDIA QUERIES */
 @media (max-width:600px){
+    #seminfo{
+        font-weight: 500;
+        font-size:35px;
 
-    #seminfo, #slogan{
-        font-size:16px;
     }
-    .formato{    
-
+    #slogan{
+        text-align:center;
+        font-size:18px;
+    }
+    .contorno-numeros{    
         font-size: 28px;
         border:2px solid;
         width: 50px;
         height: 70px;
         margin: 3px;
-        font-weight: 400;
+        font-weight: 300;
     }
-    .formato-pontos{
-
+    .contorno-pontos{
         font-weight: 400;
         font-size: 30px;
         font-family: 'Rajdhani', sans-serif;
@@ -324,5 +354,18 @@ footer{
     .info{
         font-size: 14px;
     }
-    
+    .local-maps{
+        margin-top:20%;
+        z-index: 10;
+        position: absolute;
+        width:500px;
+        height:250px;
+    }
+    .fundo-local{
+        width: 100%;
+    }
+    .topico-seminfo{
+        font-size: 38px;
+    }
+ 
 }

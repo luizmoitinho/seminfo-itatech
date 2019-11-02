@@ -20,9 +20,10 @@
 
 </head>
 
-<body  class="bg-gradient">
+<body>
+    <div>
 
-    <nav  id="header" class="navbar navbar-expand-lg">
+    <nav id="header" class="navbar navbar-expand-lg">
         <a id="logo" class="nav" a href="index.php">
             <span>Seminfo</span>
         </a>
@@ -35,6 +36,9 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
             <ul class="nav navbar-nav">
+                <li >
+                    <a href="#eventos">Local</a>
+                </li>
                 <li >
                     <a href="#eventos">Apoio</a>
                 </li>
@@ -55,9 +59,14 @@
             <div class="row">
                 <div id="painel-cronometro"  >
                     <div class="flex-column">
-                        <span id="seminfo"> VEM AI A SEMINFO 2019</span>
-                        <span id="slogan">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana</span>    
-                        <hr class="bg-white">
+                        <span id="seminfo"> VI SEMINFO 2019 - Evento de Tecnologia</span>
+                        <span id="slogan">
+                            Matenha-se conectado nas tecnologias na área de TI
+                        </span>    
+                        <span id="slogan">
+                        Com Palestras e Cursos.
+                        </span> 
+                        <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana</span>    
                     </div>
                     <div id="cronometro" class="flex-row">
                         <div class="flex-column">
@@ -84,15 +93,31 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="flex-column localizacao">
+                <div class="flex-row">
+                    <iframe class="local-maps"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9879.486491068668!2d-37.43711892562412!3d-10.682208047209048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1572313589137!5m2!1spt-BR!2sbr" width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                    <div class="descricao-local flex-column ">
+                        
+                        <span class="titulo-local flex-row">Local do Evento </span>
+                        <span class="descricao">UFS - Campus Itabaiana</span>
+                        <span class="descricao">Av. Ver. Olímpio Grande</span>
+                        <span class="descricao-enfase">Auditorio - Hall de entrada 1º andar</span>
+          
+
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
         <div class="painel-eventos">
             <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="fundo-local flex-column">
-                    <iframe class="local-maps"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9879.486491068668!2d-37.43711892562412!3d-10.682208047209048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1572313589137!5m2!1spt-BR!2sbr" width="900" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="container-fluid">
                     <div class="row">
+                        <div class="info-seminfo" id="eventos">
+                            <span class="topico-seminfo">Apoio</span>
+                        </div>
                         <div class="info-seminfo" id="eventos">
                             <span class="topico-seminfo">Eventos</span>
                         </div>
@@ -104,10 +129,9 @@
                         </div>          
                     </div>
                 </div>
-        </div>
+            </div>
     </main>
-    <footer>
-    </footer>
+ 
     <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/lib.js"></script>

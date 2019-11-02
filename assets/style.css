@@ -1,21 +1,56 @@
-*{
-    margin:0;
-    padding:0;
+/* ==========================  genericos ======================*/
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body, html {
-    width: 100%,!important;
-    height: 100%,!important;
-    font-family: 'Ubuntu', sans-serif,!important;
+body,
+html {
+    width: 100%,  !important;
+    height: 100%,  !important;
+    font-family: 'Ubuntu', sans-serif,  !important;
 }
 
-.bg-gradient{background: linear-gradient(to right,#61b2cb,#1d65eb)}
-#header{
-    padding-left:50px;
-    padding-right:50px;
+body {
+    background-image: url("img/background.jpg");
+}
+.ufs{
+    font-size:25px;
+    color:  #2d73f5
 
 }
-#logo{
+.bg-gradient {
+    background: linear-gradient(to right, #61b2cb, #2d73f5)
+}
+.borda {
+    text-decoration: line;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-localizacao{
+    width: 100px;
+    height: 100px;
+
+}
+/* ==========================  barra navegacao ======================*/
+#header {
+    padding-left: 50px;
+    padding-right: 50px;
+    opacity: 1;
+}
+
+#logo {
     font-family: 'Rochester', cursive;
     color:#fff;
     font-size: 50px;  
@@ -24,12 +59,10 @@ body, html {
     text-decoration: none;
     transition-duration: 0.8s;
 }
-#logo:hover{
-    transform: scale(1.1);
-}
 
-#jr{
-    color:#fff;
+
+#jr {
+    color: #fff;
     padding: 0;
     background: rgb(0, 0, 0);
     font-size: 20px;
@@ -39,72 +72,127 @@ body, html {
 
 #barra-navegacao li {
     font-size: 15px;
-    color:#fff;
     margin: 8px;
 }
-#barra-navegacao ul li a{
+
+#barra-navegacao ul li a {
     font-size: 20px;
-    color:#fff;
+    color: #8ccde0;
     padding: 10px;
 }
+
 #barra-navegacao li a:link {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
 #barra-navegacao li a:hover {
-    background-color: #fff;
+    background-color: #61b2cb;
     border-radius: 5px;
-    color:rgb(13, 14, 13);
+    color: rgb(251, 255, 251);
     transition-duration: .5s;
 }
-#barra-navegacao li a{
-    color:#fff;
+
+#barra-navegacao li a {
+    color: #fff;
 }
 
+#btn-menu {
+    cursor: pointer;
+    background-color: rgb(255, 253, 253);
+    border-radius: 50%;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition-duration: 0.4s;
 
+}
 
-/*==================     MAIN        ====================*/
-#main{
+#btn-menu:hover {
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
+
+.icon-bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000000;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+
+#btn-menu :first-child {
+    margin-top: 0px;
+
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*==================     CRONOMETRO        ====================*/
+#main {
     width: 100%;
     height: 100%;
-   
 }
 
-#painel-cronometro{
+#painel-cronometro {
 
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3%;
-
-
 }
-#cronometro{
+
+#cronometro {
     margin-top: 2%;
-   
+
 }
-#seminfo{
-    font-family: 'Ubuntu', sans-serif,!important;
-    color:rgb(232, 248, 6);
-    font-size:40px; 
+
+#seminfo {
+    font-family: 'Ubuntu', sans-serif,  !important;
+    color: rgb(232, 248, 6);
+    font-size: 40px;
     font-weight: 700;
 }
 
-#slogan{
-    color:rgb(250, 251, 252);
-    font-size:25px;
+#slogan {
+    color: rgb(250, 251, 252);
+    font-size:35px;
     font-weight: 450;
-    align-content:center;
+    align-content: center;
+}
+#data-seminfo{
+    color: rgb(213, 222, 231);
+    font-size: 22px;
+    font-weight: 450;
+    align-content: center;
+    margin-top:3%;
 }
 
-.contorno-numeros{
-    
-    color:rgb(250, 251, 252);
+.contorno-numeros {
+
+    color: rgb(250, 251, 252);
     font-size: 40px;
     font-family: 'Rajdhani', sans-serif;
-    border:3px solid;
+    border: 3px solid;
     width: 100px;
     height: 120px;
     border-radius: 10px;
@@ -113,262 +201,213 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-}   
-.contorno-pontos{
-    color:rgb(250, 251, 252);
+}
+
+.contorno-pontos {
+    color: rgb(250, 251, 252);
     font-weight: 700;
     font-size: 70px;
     margin-bottom: 3%;
     font-family: 'Rajdhani', sans-serif;
     padding: 10px 0px 30px 0px;
 }
-.info{
-    color:rgb(255, 255, 255);
+
+.info {
+    color: rgb(255, 255, 255);
     font-size: 18px;
 }
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: center;
-}
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
 
-}
-.texto-apoio{
-    margin:2%;
-    text-align: justify;
 
+/*==================     INFORMACOES DA LOCALIZACAO        ====================*/
+.localizacao{
+    margin-bottom:5%;;
 }
-.img-rounded{
-    width: 300px;
-    height: 300px;
-    border-radius:2%;
-   
+
+.descricao-local{
+
+    color: rgb(20, 19, 19);
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-left: 1%;
+    box-sizing: border-box;
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    border-radius:5px 5px;
+    position: absolute;
+    box-shadow: -2px 2px 5px;
 }
-.fundo{
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    background-color:rgb(130, 248, 242);
-    opacity: .9;
+
+.titulo-local{
+    font-size:28px;
+    font-family: 'Ubuntu', sans-serif,  !important;
+    color:#484a4d;
+    font-weight: 700;
 }
-.painel-eventos{
+
+.descricao{
+    font-size:18px;
+    color:rgb(99, 91, 91)
+}
+.descricao-enfase{
+    font-size:18px;
+    color:rgb(99, 91, 91);
+    font-weight: 600;
+}
+
+
+/*==================     INFORMACOES DA SEMINFO        ====================*/
+.painel-eventos {
     z-index: -100;
 }
-
-.fundo-local{
-    background-image: url("img/ufs-toda2.jpg");
-    width: 100%;
-    height: 300px;
-    position: relative;
-    margin-bottom: 20%;
+.informacoes div {
+    margin-top: 5%;
 }
 
-.local-maps{
-    margin-top:11%;
-    z-index: 10;
-    position: absolute;
-}
-
-.informacao-local{
-    margin-top:5%;
-    padding: 1%;
-    height: 250px;
-    color:rgb(20, 19, 19);
-    box-shadow: 5px -5px 15px #000;
-    background-color: rgb(255, 255, 255);
-    z-index: 120;
-    position: absolute;
-    justify-content: center;
-    margin-left:2%
-}
-
-.informacoes div{
-    margin-top:5%;
-}
-.info-evento{
+.info-evento {
     background-color: rgb(204, 203, 203);
     height: 500px;
 }
-.info-seminfo{
-    color:rgb(93, 91, 91);
+
+.info-seminfo {
+    color: rgb(93, 91, 91);
     border: 2px solid #fff;
     background-color: #fff;
     width: 100%;
     height: 500px;
     justify-content: center;
     text-align: center;
-    margin-top:2%;
 }
-.info-seminfo:last-child{
-    margin-bottom?2%;
+
+.info-seminfo:last-child {
+    margin-bottom:2%;
 }
-.topico-seminfo{
-    padding-left:20px ;
-    padding-right:20px ;
+
+.topico-seminfo {
+    padding-left: 20px;
+    padding-right: 20px;
     font-weight: 300;
-    font-size:60px;
+    font-size: 60px;
 
 }
-.icon-patrocinadores{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color:rgb(10, 95, 192);
-    display: inline-flex    ;
-    align-items: center;
-    justify-content: center;
-    color:#fff;
-    cursor: pointer;
+
+.icon-patrocinadores:hover {
+    transform: scale(1.1);
     transition-duration: .1s;
 }
-.icon-patrocinadores:hover{
-    transform:scale(1.1);
-    transition-duration: .1s;
-}
-#btn-menu{
-    cursor: pointer;
-    background-color: rgb(255, 253, 253);
-    border-radius: 50%;
-    border:0px;
-    width: 40px;
-    height: 40px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition-duration: 0.4s;
 
-}
-#btn-menu:hover{
-    transform: scale(1.2);
-    transition-duration: 0.4s;
-}
-.icon-bar{
-    width: 25px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #000000;
-    margin-top:5px;
-    transition: 0.4s;
-}
-#btn-menu :first-child
-{
-    margin-top:0px;
+/*==================     FOOTER        ====================*/
 
-}
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
-.borda{
-    text-decoration: line;
-}
-footer{
-    margin-top:5%;
-    bottom:0;
+footer {
+    margin-top: 5%;
+    bottom: 0;
     height: 300px;
     background: rgb(45, 45, 58);
 }
 
-/* MEDIA QUERIES */
-@media (max-width:800px){
+/*==================     MEDIA QUERIES        ====================*/
 
-    #seminfo{
+@media (max-width:1000px) {
+
+    #seminfo {
         font-weight: 500;
-        font-size:40px;
+        font-size: 35px;
+        text-align: center;
+    }
 
+    #slogan {
+        text-align: center;
+        font-size: 20px;
     }
-    #slogan{
-        text-align:center;
-        font-size:24px;
+    #data-seminfo{
+        text-align: center;
+        font-size: 18px;
     }
-    .contorno-numeros{
+
+    .contorno-numeros {
         font-size: 50px;
-        border:2px solid;
+        border: 2px solid;
         width: 70px;
         height: 90px;
         margin: 8px;
         font-weight: 300;
     }
-    .contorno-pontos{
+
+    .contorno-pontos {
         font-size: 50px;
         margin-bottom: 3%;
         font-weight: 700;
     }
-    .info{
+
+    .info {
         font-size: 16px;
     }
-    .local-maps{
-        margin-top:18%;
-        z-index: 10;
-        position: absolute;
-        width:600px;
-        height:250px;
+    .localizacao{
+        margin-top: 18%;
     }
-    .fundo-local{
-       
+    .local-maps {
+        width: 600px;
+        height: 250px;
+    }
+
+    .fundo-local {
+        background-color: #fff;
         width: 100%;
 
     }
- 
+
 }
 
 
 
 /* MEDIA QUERIES */
-@media (max-width:600px){
-    #seminfo{
+@media (max-width:600px) {
+    #seminfo {
         font-weight: 500;
-        font-size:35px;
+        font-size: 30px;
+        text-align: center;
+    }
 
+    #slogan {
+        text-align: center;
+        font-size: 18px;
     }
-    #slogan{
-        text-align:center;
-        font-size:18px;
+    #data-seminfo{
+        text-align: center;
+        font-size: 16px;
     }
-    .contorno-numeros{    
+    .contorno-numeros {
         font-size: 28px;
-        border:2px solid;
+        border: 2px solid;
         width: 50px;
         height: 70px;
         margin: 3px;
         font-weight: 300;
     }
-    .contorno-pontos{
+
+    .contorno-pontos {
         font-weight: 400;
         font-size: 30px;
         font-family: 'Rajdhani', sans-serif;
     }
-    .info{
+
+    .info {
         font-size: 14px;
     }
-    .local-maps{
-        margin-top:20%;
-        z-index: 10;
-        position: absolute;
-        width:500px;
-        height:250px;
+    .localizacao{
+        margin-top: 20%;
     }
-    .fundo-local{
+    .local-maps { 
+        width: 500px;
+        height: 250px;
+    }
+    .fundo-local {
         width: 100%;
     }
-    .topico-seminfo{
+
+    .topico-seminfo {
         font-size: 38px;
     }
- 
+
 }

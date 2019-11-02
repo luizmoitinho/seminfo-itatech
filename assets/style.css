@@ -14,6 +14,14 @@ html {
 body {
     background-image: url("img/background.jpg");
 }
+.logo-itatech{
+    width: 480px;
+    height: 180px;
+}
+.logo-seminfo{
+    width: 380px;
+    height: 150px;
+}
 .ufs{
     font-size:25px;
     color:  #2d73f5
@@ -333,10 +341,20 @@ body {
 footer {
     margin-top: 5%;
     bottom: 0;
-    height: 300px;
-    background: rgb(45, 45, 58);
+    background: rgb(242, 242, 255);
+    opacity: 0.9;
+    align-items: center;
+    padding:5%
 }
-
+.img-footer{
+    margin-left:10%;
+}
+#direitos{
+    font-size: 25px;
+    color:#000;
+    font-weight: 600;
+    margin-top:4%;
+}
 /*==================     MEDIA QUERIES        ====================*/
 
 @media (max-width:1000px) {
@@ -363,6 +381,7 @@ footer {
         height: 90px;
         margin: 8px;
         font-weight: 300;
+        
     }
 
     .contorno-pontos {

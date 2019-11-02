@@ -125,6 +125,14 @@
                 </div>
             </div>
     </main>
+     <footer class="rodape flex-column">
+        <div class="flex-row">
+            <img class="logo-itatech "src="assets/img/logo-itatech.jpeg">
+            <img class="logo-seminfo img-footer"src="assets/img/logo-seminfo.jpeg">
+        </div>
+
+        <span id="direitos"> &copy Todos os direitos reservados</span>
+     </footer>
 
     <script src="assets/js/jquery.min.js"></script>
 

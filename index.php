@@ -103,8 +103,7 @@
                         <span class="titulo-local flex-row">Local do Evento </span>
                         <span class="descricao">UFS - Campus Itabaiana</span>
                         <span class="descricao">Av. Ver. Olímpio Grande</span>
-                        <span class="descricao-enfase">Auditorio - Hall de entrada 1º andar</span>
-          
+                        <span class="descricao-enfase">Auditorio - Hall de entrada 1º andar</span>               
 
                     </div>
                 </div>
@@ -116,22 +115,25 @@
             <div class="container-fluid">
                     <div class="row">
                         <div class="info-seminfo" id="eventos">
-                            <span class="topico-seminfo">Apoio</span>
-                        </div>
-                        <div class="info-seminfo" id="eventos">
-                            <span class="topico-seminfo">Eventos</span>
-                        </div>
-                        <div class="info-seminfo">
-                             <span class="topico-seminfo">Palestrantes</span>
-                        </div>
-                        <div class="info-seminfo">
-                            <span class="topico-seminfo">Apoio</span>
+                            <span class="topico-seminfo">Colabore Com o Evento</span>
+                            <div class="area-patrocinadores flex-column">
+                                <span class="colabore">Não deixe sua empresa de fora de um dos maiores eventos de Tecnologia do Estado de Sergipe!</span>
+                                <div class="btn-apoio"><span>Clique Aqui</span></div>
+                            </div>   
                         </div>          
                     </div>
                 </div>
             </div>
     </main>
- 
+     <footer class="rodape flex-column">
+        <div class="flex-row">
+            <img class="logo-itatech "src="assets/img/logo-itatech.jpeg">
+            <img class="logo-seminfo img-footer"src="assets/img/logo-seminfo.jpeg">
+        </div>
+
+        <span id="direitos"> &copy Todos os direitos reservados</span>
+     </footer>
+
     <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/lib.js"></script>

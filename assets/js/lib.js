@@ -1,7 +1,12 @@
 this.setInterval(function(){
     atualizarCronometro()},1000)
 
-
+    $("#painel-cronometro").hide();
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("#painel-cronometro").slideDown(900)
+        },1500)
+    })
 
 function atualizarCronometro(){
     getCronometro(function(res){

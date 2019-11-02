@@ -5,7 +5,7 @@ this.setInterval(function(){
     $(document).ready(function(){
         setTimeout(function(){
             $("#painel-cronometro").slideDown(900)
-        },1000)
+        },1500)
     })
 
 function atualizarCronometro(){

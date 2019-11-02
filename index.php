@@ -43,7 +43,7 @@
                     <a href="#eventos">Apoio</a>
                 </li>
                 <li >
-                    <a href="#">Paletras</a>
+                    <a href="#">Palestras</a>
                 </li>
                 <li >
                     <a  href="#">Eventos</a>
@@ -61,12 +61,12 @@
                     <div class="flex-column">
                         <span id="seminfo"> VI SEMINFO 2019 - Evento de Tecnologia</span>
                         <span id="slogan">
-                            Matenha-se conectado nas tecnologias na área de TI
+                            Matenha-se conectado nas tecnologias da área de TI
                         </span>    
                         <span id="slogan">
-                        Com Palestras e Cursos.
+                        com Palestras e Cursos!
                         </span> 
-                        <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana</span>    
+                        <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de Itabaiana.</span>    
                     </div>
                     <div id="cronometro" class="flex-row">
                         <div class="flex-column">
@@ -103,7 +103,7 @@
                         <span class="titulo-local flex-row">Local do Evento </span>
                         <span class="descricao">UFS - Campus Itabaiana</span>
                         <span class="descricao">Av. Ver. Olímpio Grande</span>
-                        <span class="descricao-enfase">Auditorio - Hall de entrada 1º andar</span>               
+                        <span class="descricao-enfase">Auditório - Hall de entrada 1º andar</span>               
 
                     </div>
                 </div>
@@ -115,10 +115,10 @@
             <div class="container-fluid">
                     <div class="row">
                         <div class="info-seminfo" id="eventos">
-                            <span class="topico-seminfo">Colabore Com o Evento</span>
+                            <span class="topico-seminfo">Colabore com o evento</span>
                             <div class="area-patrocinadores flex-column">
-                                <span class="colabore">Não deixe sua empresa de fora de um dos maiores eventos de Tecnologia do Estado de Sergipe!</span>
-                                <div class="btn-apoio"><span>Clique Aqui</span></div>
+                                <span class="colabore">Não deixe sua empresa fora de um dos maiores eventos de tecnologia do estado de Sergipe!</span>
+                                <div class="btn-apoio"><span>Clique aqui</span></div>
                             </div>   
                         </div>          
                     </div>

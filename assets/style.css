@@ -20,12 +20,12 @@ body {
 
 }
 .bg-gradient {
-    background: linear-gradient(to right, #61b2cb, #2d73f5)
-}
-.borda {
-    text-decoration: line;
+    background: linear-gradient(to right, #a2daeb, #114dbd)
 }
 
+.borda {    
+    text-decoration: line;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -296,7 +296,38 @@ body {
     transform: scale(1.1);
     transition-duration: .1s;
 }
+/*==================    ÁREA PATROCINADORES       ====================*/
+.colabore{
+    font-size: 50px;
+    color: #a409b3;
+    font-family: 'Ubuntu', sans-serif,  !important;
+    font-weight: 300;
+    
+}
+.btn-apoio{
+    margin-top:2%;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color:#fff;
+    cursor: pointer;
 
+    border-radius: 3px 3px;
+    font-size: 25px;
+    font-weight: 600;
+    transition-duration: 1s;
+    background-color:#a409b3;
+   
+    padding:2%;
+}
+.btn-apoio:hover{
+    transition-duration: 0.5s;
+    border:1px solid #9721a1;
+    color:#a409b3;
+    background-color:#fff;
+}
 /*==================     FOOTER        ====================*/
 
 footer {

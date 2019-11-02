@@ -15,12 +15,12 @@ body {
     background-image: url("img/background.jpg");
 }
 .logo-itatech{
-    width: 480px;
-    height: 180px;
+    width: 45%;
+    height: 45%;
 }
 .logo-seminfo{
-    width: 380px;
-    height: 150px;
+    width: 45%;
+    height: 45%;
 }
 .ufs{
     font-size:25px;
@@ -314,7 +314,7 @@ body {
 }
 .btn-apoio{
     margin-top:2%;
-    width: 500px;
+    width: 42%;
     height: 50px;
     display: flex;
     flex-direction: column;

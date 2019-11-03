@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', sans-serif,  !important;
-   background-image: url("img/background.jpg");
+    background-image: url("img/background.jpg");
 }
 
 .logo-itatech{
@@ -54,8 +54,7 @@ body{
 }
 /* ==========================  barra navegacao ======================*/
 #header {
-    padding-left: 50px;
-    padding-right: 50px;
+
     opacity: 1;
 }
 
@@ -347,8 +346,9 @@ footer {
     background: rgb(36, 36, 37);
     opacity: 0.9;
     align-items: center;
-    position: absolute;
-
+    display:flex;
+    align-items: flex-end;
+    position: relative;
 }
 .img-footer{
     margin-left:10%;
@@ -597,53 +597,36 @@ footer {
         font-weight: 200;
     }
 }
-@media Screen and (max-width:680px) {
+@media Screen and  (max-width:670px) {
     #seminfo {
-        font-size: 50px;
+        font-size: 28px;
     }
     #slogan {
-     
-        font-size: 40px;
+        font-size: 24px;
     }
     #data-seminfo{
-        font-size:30px;
+        font-size:18px;
         text-align: center;
 
     }
     #direitos{
         font-size:18px;
     } .contorno-numeros {
-        font-size: 30px;
+        font-size: 20px;
         border: 3px solid;
         width: 60px;
         height: 80px;
         font-weight: 500;
     }
-
-    .descricao-topico{
-        font-size: 30px;
-        color: #993399;
-        font-family: 'Ubuntu', sans-serif,  !important;
-        font-weight: 200;
-    }
     .local-maps{
         width:400px;
-        height:100%;
-    }
-    .descricao-local{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #993399;
-        color:#fff;
-        cursor: pointer;
-        z-index: 100;
+        height:300px;
     }
     .topico-seminfo {
-        font-size: 28px;
+        font-size: 25px;
     }
     .descricao-topico{
-        font-size: 25px;
+        font-size: 23px;
         color: #993399;
         font-family: 'Ubuntu', sans-serif,  !important;
         font-weight: 200;

@@ -1,35 +1,65 @@
-this.setInterval(function(){
-    atualizarCronometro()},1000)
+this.setInterval(function () {
+    atualizarCronometro()
+}, 1000)
 
-    $("#painel-cronometro").hide();
-    $(document).ready(function(){
-        setTimeout(function(){
-            $("#painel-cronometro").slideDown(900)
-        },1500)
-    })
+var screenWidth = window.innerWidth;
+if (screenWidth <= 600) {
+    compactarDescricaoLocalizacao()
+}
+else {
+    descompactarLocalizacao()
+}
+window.addEventListener("resize", () => {
+    var screenWidth = window.innerWidth;
+    if (screenWidth <= 600) {
+        compactarDescricaoLocalizacao()
+    }
+    else {
+        descompactarLocalizacao()
+    }
 
-function atualizarCronometro(){
-    getCronometro(function(res){
+});
+window.addEventListener('orientationchange', function(){
+    switch(window.orientation){ 
+        case 90: 
+            $("footer").css("position", "relative")
+        break; 
+        default:
+                $("footer").css("position", "relative")
+    }
+    
+});
+function descompactarLocalizacao() {
+    $(".descricao-local").css("visibility", "visible")
+    $(".icon-localizacao").css("display", "none");
+}
+function compactarDescricaoLocalizacao() {
+
+    $(".descricao-local").css("visibility", "hidden");
+    $(".icon-localizacao").css("display", "block");
+}
+function atualizarCronometro() {
+    getCronometro(function (res) {
         $("#seg").animate({
-            top:"2px"
-          });
+            top: "2px"
+        });
         let cronometro = JSON.parse(res);
         document.getElementById('dias').textContent = cronometro['dias'];
-        document.getElementById('horas').textContent= cronometro['horas'];
+        document.getElementById('horas').textContent = cronometro['horas'];
         document.getElementById('min').textContent = cronometro['min'];
         document.getElementById('seg').textContent = cronometro['seg'];
-   
+
     });
-   
+
 }
-function getCronometro(cronometro){
+function getCronometro(cronometro) {
     $.ajax({
-        url:"funcoes.php",
-        type:"POST",
-        success:function(res){
+        url: "funcoes.php",
+        type: "POST",
+        success: function (res) {
             cronometro(res);
         },
-        error:function(){
+        error: function () {
             alert('Ocorreu um problema na conexao ! :/');
         }
     });
@@ -39,13 +69,13 @@ function getCronometro(cronometro){
 
 function transformIcon() {
     let icons_bar = document.getElementsByClassName("icon-bar");
-    if(icons_bar[0].style.transform=="")
-        icons_bar[0].style.transform=" rotate(45deg) translate(3px, -6px)";
+    if (icons_bar[0].style.transform == "")
+        icons_bar[0].style.transform = " rotate(45deg) translate(3px, -6px)";
     else
-        icons_bar[0].style.transform=""
+        icons_bar[0].style.transform = ""
 }
 showCronometro();
-function showCronometro(){
+function showCronometro() {
     //$("#cronometro").css("visibility","visible");
     $("#cronometro").slideDown("slow");
 }

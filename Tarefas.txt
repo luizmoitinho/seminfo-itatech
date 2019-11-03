@@ -1,7 +1,22 @@
-O codigo precisa ser refatorado, porém atente-se no que tem que ser feito!
- - Escolher a cor que tem a haver com a logo da seminfo
- - Forma como será expostos os itens
- - Ao clicar no link devera redirecionar para a mesma pagina mas em cima de uma seção( dica:  use o "for")
- - Campo de patrocinadores
- - Imagem da UFS para por de forma fixed
- - Ajustes na responsividade
+ -  Criar Texto Informativo para seminfo
+
+ -  Colocar efeito para quando der a hora 00: 00: 00 :00
+ 
+
+ -  Melhorar Responsividade
+
+ -  Formatar informações sobre a itatech
+
+ -  Footer precisa de informações
+
+ -  Criar um Layout para os tipos de patrocinadores (Usem a criatividade)
+
+
+ -  Refatorar codigo js que consome dados da "API" em php.
+ -  Colocar Açoes nos numeros conforme for passando
+ -  Refatorar o codigo PHP, por uma classe
+
+	OBS : CRIEM UM BRANCH PARA CADA TAREFA E NAO MODIFIQUE NADA ALEM DISSO, POIS DÁ CONFLITO!
+ 	CONFORME FOR FAZENDO EMPURRE PARA "CODE REVIEW".
+
+CODE REVIEW

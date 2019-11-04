@@ -273,6 +273,7 @@ body{
 .painel-eventos {
     z-index: -100;
 }
+
 .informacoes div {
     margin-top: 5%;
 }
@@ -308,6 +309,46 @@ body{
     background-color:#fff;
     height:200px;
     width:100%
+}
+
+#info-evento {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 450;
+    align-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn-inscrever {
+    width: 148px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color:#fff;
+    cursor: pointer;
+
+    border-radius: 3px 3px;
+    font-size: 25px;
+    font-weight: 600;
+    transition-duration: 1s;
+    background-color:#a409b3;
+    border:1px solid #9721a1;
+
+    padding:2%;
+
+    margin-top: 10%;
+    margin-bottom: 50%;
+}
+
+.painel-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
 }
 
 

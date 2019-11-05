@@ -3,8 +3,6 @@ if(document.getElementsByTagName('cronometro')){
         atualizarCronometro()
     }, 1000)
 }
-
-
 window.addEventListener('orientationchange', function(){
     switch(window.orientation){ 
         case 90: 

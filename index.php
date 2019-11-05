@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>SEMINFO-UFS 2019</title>
+<title>SEMINFO - UFS 2019</title>
 <?php require_once("head.php")?>
 
 <body>

@@ -5,27 +5,13 @@
 
 <body>
         <?php require_once("barra_navegacao.php")?>
-       
         <main>
 
-            <div class="painel-eventos">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="contato-apoio">
-                                <span class="topico-seminfo">Fale Conosco</span>
-                                <div class="flex-column">
-                                    <form class="form-group col-md-5" action="enviar_email.php" method="POST">
-                                        <input class="form-control item-contato" type="text" placeholder="Digite Seu Nome" name="nome">
-                                        <input class="form-control item-contato" placeholder="E-mail" type="email" name="email">
-                                        <input class="form-control item-contato" placeholder="Telefone para contato" type="number" name="telefone">
-                                        <input type="checkbox" id="patrocinio" onclick="selecionaPatrocinio()">
-                                        <label for="patrocinio">Desejo apoiar o evento </label>
-                                        <div id="tipos-patrocinios">  
-                                        </div>
-                                        <Textarea class="form-group col-md-12 item-contato" name="msg" rows="5" placeholder="Digite aqui alguma dúvida ou informação"></Textarea>
-                                        <button class="btn-lg btn-success">Enviar</button>
-                                    </form>
-                                </div>
+            <div class="painel-eventos flex-column">
+                    <div class="container ">
+                        <div class="flex-column ">
+                            <div class="col-md-7 contato-apoio ">
+                                <iframe class="col-md-12 form-google" src="https://docs.google.com/forms/d/e/1FAIpQLSf2g8sN8Z-SVZgf7AGAMbC83HpHAsKw8ezvT2ZSrpFTihVCvw/viewform?embedded=true" width="640" height="1300" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
                             </div>
                         </div>
                     </div>

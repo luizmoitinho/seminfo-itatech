@@ -15,4 +15,10 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
 
+    <!--fiv icon-->
+ 
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/fiv_icon/favicon64x64.png">
+
+  
+
 </head>

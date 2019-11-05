@@ -1,5 +1,5 @@
 <nav id="header" class="navbar navbar-expand-lg">
-            <a id="logo" class="nav" a href="index.php">
+            <a id="logo" class="nav" href='index.php' >
                 <span>Seminfo</span>
             </a>
             <div class="navbar-toggler" data-toggle="collapse" data-target="#barra-navegacao"
@@ -12,6 +12,9 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
                 <ul class="nav navbar-nav">
+                     <li>
+                        <a href="index.php">Inicio</a>
+                    </li>
                     <li>
                         <a href="#descricao_seminfo">Sobre</a>
                     </li>
@@ -23,4 +26,4 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+</nav>

@@ -6,7 +6,6 @@
 <body>
         <?php require_once("barra_navegacao.php")?>
         <main>
-
             <div class="painel-eventos flex-column">
                     <div class="container ">
                         <div class="flex-column ">

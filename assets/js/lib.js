@@ -1,22 +1,10 @@
-let btnGoogle
 
-
-window.addEventListener('orientationchange', function(){
-    switch(window.orientation){ 
-        case 90: 
-            $("footer").css("position", "relative")
-        break; 
-        default:
-                $("footer").css("position", "relative")
-    }
-    
-});
-
-window.addEventListener('load',function(){
-    btnGoogle= document.get('appsMaterialWizButtonPaperbuttonLabel');
-    console.log(btnGoogle)
-})
-
+   $("#painel-cronometro").hide();
+   $(document).ready(function(){
+       setTimeout(function(){
+           $("#painel-cronometro").fadeIn(1000)
+       },1500)
+   })
 
 function transformIcon() {
     let icons_bar = document.getElementsByClassName("icon-bar");
@@ -25,6 +13,7 @@ function transformIcon() {
     else
         icons_bar[0].style.transform=""
 }
+
 function atualizarCronometro() {
     getCronometro(function (res) {
         let cronometro = JSON.parse(res);
@@ -84,3 +73,14 @@ if(document.getElementById('cronometro')){
     
     showCronometro();
 }
+
+window.addEventListener('orientationchange', function(){
+    switch(window.orientation){ 
+        case 90: 
+            $("footer").css("position", "relative")
+        break; 
+        default:
+                $("footer").css("position", "relative")
+    }
+    
+});

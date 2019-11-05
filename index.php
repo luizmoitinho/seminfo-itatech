@@ -22,24 +22,20 @@
                     <div id="cronometro" class="flex-column">
                         <div class="flex-row">
                             <div id="triangulo-para-direita"></div>
-                            <div class="flex-column">
-                                <span class="contorno-numeros" id="dias"> </span>
+                            <div class="flex-column contorno-numeros">
+                                <span  id="dias"> </span>
                                 <span class="info">Dias</span>
                             </div>
-                            <div class="flex-column">
-                                <span class="contorno-numeros" id="horas"> </span>
+                            <div class="flex-column contorno-numeros">
+                                <span  id="horas"> </span>
                                 <span class="info">Horas</span>
                             </div>
-                            <span class="contorno-pontos">:</span>
-                            <div class="flex-column">
-                                <span class="contorno-numeros" id="min"></span>
+                            <div class="flex-column contorno-numeros">
+                                <span  id="min"></span>
                                 <span class="info">Minutos</span>
                             </div>
-                            <span class="contorno-pontos">:</span>
-                            <div class="flex-column">
-                                <span class="contorno-numeros">
-                                    <span id="seg"></span>
-                                </span>
+                            <div class="flex-column contorno-numeros">
+                                <span id="seg"></span>
                                 <span class="info">Segundos</span>
                             </div>
                             <div id="triangulo-para-esquerda"></div>

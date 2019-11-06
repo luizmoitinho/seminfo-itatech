@@ -15,7 +15,8 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', sans-serif,  !important;
-    background: url("img/background-sem-texto.jpg") fixed top right ;
+    background: url("img/background-sem-texto.jpg") fixed left top 100%;
+
 }
 
 .logo-itatech{
@@ -44,7 +45,6 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .flex-column {
@@ -83,6 +83,27 @@ body{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent; 
     border-right:25px solid  rgb(232, 248, 6); 
+  }
+  .img-logo-seminfo{
+    width: 80%;
+    height: 20%;
+  }
+  .img-logo-ufs{
+    width: 20%;
+  }
+  .img-logo-itatech{
+    width: 80%;
+  }
+  .margin-bottom{
+      margin-bottom: 5%;
+  }
+  .img-fundo-ufs{
+      opacity: 0.7;
+      position: relative;
+      z-index:100;
+      width: 100%;
+      float:left;
+
   }
 /* ==========================  barra navegacao ======================*/
 #header {
@@ -267,14 +288,12 @@ body{
 }
 
 .descricao-local{
-
     color: rgb(20, 19, 19);
     background-color: rgb(255, 255, 255);
     justify-content: center;
-    margin-left: 1%;
     box-sizing: border-box;
-    width: 320px;
-    height: 200px;
+    width: 1020px;
+    height: 300px;
     text-align: center;
     border-radius:5px 5px;
     position: absolute;
@@ -308,15 +327,13 @@ body{
 }
 
 .info-seminfo {
+    background-color: rgb(255, 255, 255);
     color: rgb(93, 91, 91);
-    border: 2px solid #fff;
-    background-color: #fff;
-    width: 100%;
-    padding:2%;
     padding-bottom:2%;
     justify-content: center;
     text-align: center;
     border-radius:5px 5px;
+    margin-bottom:0%;
 }
 
 .info-seminfo:last-child {
@@ -325,9 +342,7 @@ body{
 
 .topico-seminfo {
     color:#114dbd;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 300;
+    font-weight: 450;
     font-size: 50px;
     margin-bottom:2%;
 
@@ -350,15 +365,15 @@ body{
 }
 
 .btn-inscrever {
-    width: 248px;
-    height: 50px;
+    width: 448px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     color:#fff;
     border:1px solid #114dbd;
     cursor: pointer;
-    border-radius: 3px 3px;
+    border-radius: 5px 5px;
     font-size: 25px;
     font-weight: 600;
     background:  #114dbd;
@@ -389,13 +404,11 @@ body{
 
 /*==================    ÁREA PATROCINADORES       ====================*/
 .descricao-topico{
-    font-size: 25px;
+    font-size: 30px;
     color: #000;
     font-family: 'Ubuntu', sans-serif,  !important;
     font-weight: 300;
     text-align: justify;
-    padding:2%;
-    
 }
 .btn-apoio{
     margin-top:2%;

@@ -3,9 +3,8 @@
 <title>SEMINFO - UFS 2019</title>
 <?php require_once("head.php")?>
 
-<body>
+<body class="background">
     <?php require_once("barra_navegacao.php")?>
-
     <main>
         <div class="container-fluid">
             <div class="row">
@@ -23,15 +22,15 @@
                         <div class="flex-row">
                             <div id="triangulo-para-direita"></div>
                             <div class="flex-column contorno-numeros">
-                                <span  id="dias"> </span>
+                                <span id="dias"> </span>
                                 <span class="info">Dias</span>
                             </div>
                             <div class="flex-column contorno-numeros">
-                                <span  id="horas"> </span>
+                                <span id="horas"> </span>
                                 <span class="info">Horas</span>
                             </div>
                             <div class="flex-column contorno-numeros">
-                                <span  id="min"></span>
+                                <span id="min"></span>
                                 <span class="info">Minutos</span>
                             </div>
                             <div class="flex-column contorno-numeros">
@@ -41,7 +40,8 @@
                             <div id="triangulo-para-esquerda"></div>
                         </div>
                         <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de
-                            Itabaiana.</span>
+                            Itabaiana.
+                        </span>
                     </div>
                 </div>
             </div>
@@ -56,33 +56,31 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
-            <div class="row">
-                <div class="info-seminfo flex-column" id="descricao_seminfo">
-                    <span class="topico-seminfo">O que é a SEMINFO?</span>
-                    <p class="descricao-topico">
-                        A Semana de Informática da Universidade Federal de Sergipe – Campus
-                        Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
-                        pela Itatech Jr.(empresa Júnior, formada por alunos) e com o apoio dos professores e
-                        alunos do curso Sistemas de Informação que visa proporcionar aos participantes acesso a
-                        novos conhecimentos, conceitos e novas tecnologias, por intermédio de palestras e
-                        minicursos. Proporcionando assim, uma integração entre os alunos do curso de Sistemas de
-                        Informação da UFS - Itabaiana com alunos e profissionais de outras localidades e
-                        instituições.
-                    </p>
-
-                    <a href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao"
-                        target="_blank" class="btn-inscrever">
-                        <span>Inscreva-se</span>
-                    </a>
-
-                </div>
+           <div class="col-sm-12">
+                <div class="row">
+                        <div class="info-seminfo flex-column" id="descricao_seminfo">
+                            <span class="topico-seminfo">O que é a SEMINFO?</span>
+                            <p class="descricao-topico">
+                                A Semana de Informática da Universidade Federal de Sergipe – Campus
+                                Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
+                                pela Itatech Jr.(empresa Júnior, formada por alunos) e com o apoio dos professores e
+                                alunos do curso Sistemas de Informação que visa proporcionar aos participantes acesso a
+                                novos conhecimentos, conceitos e novas tecnologias, por intermédio de palestras e
+                                minicursos. Proporcionando assim, uma integração entre os alunos do curso de Sistemas de
+                                Informação da UFS - Itabaiana com alunos e profissionais de outras localidades e
+                                instituições.
+                            </p>
+                            <a href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao"
+                                target="_blank" class="btn-inscrever">
+                                <span>Inscreva-se</span>
+                            </a>
+                        </div>
+                    </div>
             </div>
         </div>
-        </div>
-        <div class="painel-eventos">
-            <div class="container">
+        <div class="container">
+            <div class="col-sm-12">
                 <div class="row">
                     <div class="info-seminfo" id="Apoio">
                         <span class="topico-seminfo">Colabore com o evento</span>
@@ -97,26 +95,25 @@
                 </div>
             </div>
         </div>
-        <div class="painel-eventos">
-            <div class="container">
+
+        <div class="container">
+            <div class="col-sm-12">
                 <div class="row">
                     <div class="info-seminfo" id="palestras">
                         <span class="topico-seminfo">Palestras do Evento</span>
                         <div class="flex-column">
-                            <span class="descricao-topico">Em breve mais notícias sobre os palestrantes do evento! Aguardem ...</span>
-                           
+                            <span class="descricao-topico">Em breve mais notícias sobre os palestrantes do evento! Aguardem
+                                ...</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
     <?php require_once("footer.php")?>
     <script src="assets/js/jquery.min.js"></script>
-     <script src="assets/js/lib.js"></script>
-   
+    <script src="assets/js/lib.js"></script>
+
 </body>
 
 </html>

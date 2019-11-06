@@ -10,13 +10,12 @@ a:hover{
     text-decoration:underline;
 }
 a:active {text-decoration: none}
+
 body{
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', sans-serif,  !important;
-    background-image: url("img/background.jpg");
-    background-position: top;
-    background-color: rgb(56, 52, 52);
+    background: url("img/background-sem-texto.jpg") fixed top right ;
 }
 
 .logo-itatech{
@@ -317,6 +316,7 @@ body{
     padding-bottom:2%;
     justify-content: center;
     text-align: center;
+    border-radius:5px 5px;
 }
 
 .info-seminfo:last-child {
@@ -424,7 +424,7 @@ body{
 .contato-apoio {
 
     background-color: rgba(255, 255, 255);
-
+    margin-top: 10%
     
 }
 
@@ -743,8 +743,8 @@ footer {
 
     }
     .local-maps{
-        width:400px;
-        height:300px;
+        width:360px;
+        height:280px;
     }
     .topico-seminfo {
         font-size: 25px;
@@ -758,14 +758,14 @@ footer {
     #triangulo-para-direita {
         width: 0; 
         height: 0; 
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
     }
     #triangulo-para-esquerda {
         width: 0; 
         height: 0; 
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent; 
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent; 
       }
 
 }

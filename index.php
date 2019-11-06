@@ -86,41 +86,28 @@
                     </a>
             </div>
         </div>
-
-            <img src="assets/img/ufs-toda.jpg" class="img-fundo-ufs">
-     
-       
-        <div class="container">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="info-seminfo" id="Apoio">
-                        <span class="topico-seminfo">Colabore com o evento</span>
-                        <div class="flex-column">
-                            <span class="descricao-topico">Não deixe sua empresa fora de um dos maiores eventos de
-                                tecnologia do Estado de Sergipe!</span>
+        <img src="assets/img/ufs-toda.jpg" class="img-fundo-ufs ">
+        <div class="container-fluid info-seminfo margin-bottom">
+            <span class="topico-seminfo">Colabore com o evento</span>
+            <div class="row">
+                    <div class="col-md-12">
+                            <div id="Apoio">
+                                <span class="descricao-topico">Não deixe sua empresa fora de um dos maiores eventos de
+                                    tecnologia do Estado de Sergipe!
+                                </span>  
+                            </div>
+                            <div class="flex-column">
                             <a href="apoie_me.php" class="btn-inscrever">
                                 <span>Clique Aqui!</span>
                             </a>
+                            </div>
+                            
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="info-seminfo" id="palestras">
-                        <span class="topico-seminfo">Palestras do Evento</span>
-                        <div class="flex-column">
-                            <span class="descricao-topico">Em breve mais notícias sobre os palestrantes do evento!
-                                Aguardem
-                                ...</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
     </main>
     <?php require_once("footer.php")?>
     <script src="assets/js/jquery.min.js"></script>

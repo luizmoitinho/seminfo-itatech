@@ -115,7 +115,8 @@
     </main>
     <?php require_once("footer.php")?>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/lib.js"></script>
+     <script src="assets/js/lib.js"></script>
+   
 </body>
 
 </html>

@@ -1,3 +1,14 @@
+$("#painel-cronometro").hide();
+$('body').hide();
+$(document).ready(function(){
+ setTimeout(function(){
+     $("body").fadeIn(1000)
+     },1500);
+    setTimeout(function(){
+        $("#painel-cronometro").fadeIn(1000)
+    },1500)
+
+})
 
 function transformIcon() {
     let icons_bar = document.getElementsByClassName("icon-bar");

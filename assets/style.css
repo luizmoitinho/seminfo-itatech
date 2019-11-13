@@ -1,41 +1,33 @@
 /* ==========================  genericos ======================*/
-* {
-    margin: 0;
-    padding: 0;
+*{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Ubuntu', sans-serif,  !important;
 }
-a{
-    text-decoration:none;
-    }
-a:hover{
-    text-decoration:underline;
-}
-a:active {text-decoration: none}
+a{text-decoration:none;}
+a:link{font-size: 20px;}
+a:hover{text-decoration:none;}
+
 
 body{
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', sans-serif,  !important;
-    background: url("img/background-sem-texto.jpg") fixed left top 100%;
 
 }
 
-.logo-itatech{
-    width: 45%;
-    height: 45%;
-  
+.bg-cinza-light{
+    background-color: rgb(185, 188, 194);
 }
-.logo-seminfo{
-    width: 45%;
-    height: 45%;
-    cursor: pointer;
-}
-.ufs{
-    font-size:25px;
-    color:  #2d73f5
-
+.bg-white{
+    background-color:rgb(255, 255, 255),!important;
+    border-radius: 5px;
 }
 .bg-gradient {
-    background: linear-gradient(to right, #a2daeb, #114dbd)
+    background: linear-gradient(to right,rgb(1, 120, 231), #042d79)
 }
 
 .borda {    
@@ -52,22 +44,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.row-column{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-}
-.azul-destaque{
-    color:#114dbd;
-    font-weight: bold;
-}
-.destaque-amarelo {
-    font-family: 'Ubuntu', sans-serif,  !important;
-    color: rgb(232, 248, 6);
-    font-size: 40px;
-    font-weight: 700;
-}
 
 
 #triangulo-para-direita {
@@ -76,6 +53,7 @@ body{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
         border-left: 25px solid rgb(232, 248, 6);
+        position: relative;
 }
 #triangulo-para-esquerda {
     width: 0; 
@@ -83,19 +61,20 @@ body{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent; 
     border-right:25px solid  rgb(232, 248, 6); 
+    position: relative;
   }
   .img-logo-seminfo{
-    width: 80%;
-    height: 20%;
+    width: 200px;
+    height:70px;
   }
   .img-logo-ufs{
-    width: 20%;
+    width:100px;
   }
   .img-logo-itatech{
-    width: 80%;
+    width: 250px;
   }
   .margin-bottom{
-      margin-bottom: 5%;
+      margin-bottom:2%;
   }
   .img-fundo-ufs{
       opacity: 0.7;
@@ -104,12 +83,14 @@ body{
       width: 100%;
 
   }
+
 /* ==========================  barra navegacao ======================*/
 #header {
-
+    padding-left: 5%;
+    padding-right: 5%;
     opacity: 1;
+    background-color: rgb(255, 253, 253);
 }
-
 #logo {
     font-family: 'Rochester', cursive;
     color:#fff;
@@ -118,46 +99,27 @@ body{
     font-stretch: extra-expanded;
     text-decoration: none;
     transition-duration: 0.8s;
-   
+
+    width: 200px;
+    height: 50px;
 }
 #logo:hover{
     cursor: pointer;
 }
 
-#jr {
-    color: #fff;
-    padding: 0;
-    background: rgb(0, 0, 0);
-    font-size: 20px;
-    padding: 6px;
+.links{
+    font-weight: 600;
+    padding:19px 10px 20px;
+    transition-duration: 0.3s;
+    border-end-end-radius: 2px #fff;
 }
 
+.links:hover{
+    transition-duration: 0.3s;
+    background: #000918;
+    color:#fff;
+    text-decoration:none;
 
-#barra-navegacao li {
-    font-size: 15px;
-    margin: 8px;
-}
-
-#barra-navegacao ul li a {
-    font-size: 20px;
-    color: #fff;
-    padding: 10px;
-}
-
-#barra-navegacao li a:link{
-    text-decoration: none;
-    color: #fff;
-}
-
-#barra-navegacao li a:hover {
-    background-color: #114dbd;
-    border-radius: 5px;
-    color: rgb(251, 255, 251);
-    transition-duration: .5s;
-}
-
-#barra-navegacao li a {
-    color: #fff;
 }
 
 #btn-menu {
@@ -165,19 +127,18 @@ body{
     background-color: rgb(255, 253, 253);
     border-radius: 50%;
     border: 0px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
     transition-duration: 0.4s;
-
 }
 
 #btn-menu:hover {
-    transform: scale(1.2);
+    background-color: rgb(226, 221, 221);
     transition-duration: 0.4s;
 }
 
@@ -186,7 +147,7 @@ body{
     height: 3px;
     border-radius: 3px;
     background-color: #000000;
-    margin-top: 5px;
+    margin-top: 3px;
     transition: 0.4s;
 }
 
@@ -209,200 +170,103 @@ body{
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/*==================     CRONOMETRO        ====================*/
-#main {
-    width: 100%;
-    height: 100%;
-}
 
-#painel-cronometro {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3%;
+/* ==========================  barra navegacao ======================*/
+.background{
+    background: url("img/bg-sinapse.jpg") fixed right bottom ;
+    background-size: 1900px;
+    height: 600px;
+    background-repeat: no-repeat;
+    padding:0;
+   
 }
-
-#cronometro {
-    margin-top: 2%;
-    padding:0%;
-    border-radius:3px 3px;
+/* ==========================  barra navegacao ======================*/
+.painel-principal{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 600px;
+    opacity: 0.6;
+}
+#painel-cronometro{
+    text-align: center;
     position: relative;
-    transition-duration: 1s;
+    margin-top: -500px;
+    margin-bottom: 8%;
+    font-size: 28px;
+    color:#fff
 }
-
-#cronometro:hover{
-    transition-duration: 1s;
-    transform:scale(1.05)
+#cronometro{
+    margin:3%;
 }
-
-#slogan {
-    color: rgb(250, 251, 252);
-    font-size:35px;
-    font-weight: 450;
-    align-content: center;
-    
+.item-cronometro{
+    font-size: 28px;
+    margin: 8px;
+    font-weight: 500;
+}
+.info-cronometro{
+    font-size: 20px;
+    font-weight: 700;
+}
+.destaque-seminfo{
+    color: #fffb07;
+    font-size: 35px;
+    font-weight: 700;
 }
 #data-seminfo{
-    color: rgb(253, 253, 253);
-    font-size: 22px;
-    font-weight: 450;
-    align-content: center;
-}
-
-.contorno-numeros {
-
-    color: rgb(250, 251, 252);
-    font-size: 40px;
-    font-family: 'Rajdhani', sans-serif;
-    width: 100px;
-    height: 120px;
-    border-radius: 10px;
-    margin: 5px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contorno-pontos {
-    color: rgb(250, 251, 252);
-    font-weight: 700;
-    font-size: 70px;
-    margin-bottom: 3%;
-    font-family: 'Rajdhani', sans-serif;
-    padding: 10px 0px 30px 0px;
-}
-
-.info {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-}
-
-
-
-/*==================     INFORMACOES DA LOCALIZACAO        ====================*/
-.localizacao{
-    margin-bottom:5%;;
-}
-
-.descricao-local{
-    color: rgb(20, 19, 19);
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-    box-sizing: border-box;
-    width: 1020px;
-    height: 300px;
-    text-align: center;
-    border-radius:5px 5px;
-    position: absolute;
-    box-shadow: -2px 2px 5px;
-}
-
-.titulo-local{
-    font-size:28px;
-    font-family: 'Ubuntu', sans-serif,  !important;
-    color:#484a4d;
-    font-weight: 700;
-}
-
-
-.descricao-enfase{
-    font-size:18px;
-    color:rgb(99, 91, 91);
-    font-weight: 600;
-}
-
-
-/*==================     INFORMACOES DA SEMINFO        ====================*/
-
-.informacoes div {
-    margin-top: 5%;
-}
-
-.info-evento {
-    background-color: rgb(204, 203, 203);
-    height: 500px;
-}
-
-.info-seminfo {
-    background-color: rgb(255, 255, 255);
-    color: rgb(93, 91, 91);
-    padding-bottom:2%;
-    justify-content: center;
-    text-align: center;
-
-
-}
-
-.info-seminfo:last-child {
-    margin-bottom:2%;
-}
-
-.topico-seminfo {
-    color:#114dbd;
-    font-weight: 450;
-    font-size: 50px;
-    margin-bottom:2%;
-
-}   
-.patrocinadores{
-    background-color:#fff;
-    height:200px;
-    width:100%
-}
-
-#info-evento {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    font-weight: 450;
-    align-content: center;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-    color:#000
-}
-
-.btn-inscrever {
-    width: 350px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    color:#fff;
-    border:1px solid #114dbd;
-    cursor: pointer;
-    border-radius: 5px 5px;
     font-size: 25px;
-    font-weight: 600;
-    background:  #114dbd;
-    transition-duration: .8s;
-    margin-top:2%;
 }
-.btn-inscrever:hover{
-    transition-duration: .8s;
-    background: #fff;
-    text-decoration: none;
-    color:#114dbd;
 
-}
-.btn-inscrever a{
-    text-decoration:none;
+ .btn-inscrever{
+    padding:2% 4% 2% 4%;
     color:#fff;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif,  !important;
+    background:  #042d79;
+    cursor: pointer;
+    transition-duration: 1s;
 }
 
+.btn-inscrever:hover{
+    text-decoration: none;
+    border:none;
+    transition-duration: 1s;
+    color:#042d79;
+    background: #ffffff
+}
 
-.painel-info {
-    width: 100%;
+/*============================ posts seminfo =================================*/
+
+.titulo-topicos{
+    font-size: 60px;
+    color:#042d79;
+    font-weight: 500;
+
+}
+.descricao-topico{
+    font-size: 30px;
+    text-align:  justify;
+    padding:1%;
+    padding-bottom:2%
+}
+
+/*============================ localizacao seminfo =================================*/
+.detalhe-localizacao{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 3%;
-    
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
 }
-
+.local-maps{
+    width: 100%;
+    height: 450px;
+}
 
 /*==================    ÁREA PATROCINADORES       ====================*/
+
+
 .descricao-topico{
     font-size: 30px;
     color: #000;
@@ -436,16 +300,41 @@ body{
 
 .contato-apoio {
 
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     margin-top: 10%
     
 }
-
-
 .item-contato{
     margin:10px
 }
-/*==================     FOOTER        ====================*/
+
+.topico-colaborador{
+    color:#000000;
+    font-weight: 250;
+    font-size: 80px;
+    margin-bottom:10%;
+
+}
+.painel-patrocinador{
+    margin-bottom:5% ;
+}
+
+.logo-patrocinador{
+    width:100%;
+    height:220px;
+    box-shadow: 2px 2px 2px;
+}
+
+.detalhe-patrocinador{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align:left;
+    padding:5%;
+    display: none;
+    color:#000;
+}
 
 footer {
     left: 0;
@@ -459,9 +348,7 @@ footer {
     align-items: flex-end;
     position: relative;
 }
-.img-footer{
-    margin-left:10%;
-}
+
 #direitos{
     font-size: 20px;
     color:rgb(255, 255, 255);
@@ -475,268 +362,44 @@ footer {
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/*==================     MEDIA QUERIES        ====================*/
-@media (max-width:1100px) {
-    .destaque-amarelo {
-        font-weight: 500;
-        font-size: 37px;
-        text-align: center;
+
+
+@media (max-width:1100px){
+    .links{
+        font-weight: 400;
+        padding:0.6%
     }
 
-    #slogan {
-        text-align: center;
-        font-size: 34px;
-    }
-
-    .contorno-numeros {
-        font-size: 30px;
-        width: 80px;
-        height: 100px;
-        font-weight: 500;
-    }
-    
-    .contorno-pontos {
-        font-weight: 700;
-        font-size: 50px;
-
-    }
-    
-    .info {
-        color: rgb(255, 255, 255);
-        font-size: 18px;
-    }
-    .info {
-        font-size: 16px;
-    }
-    .localizacao{
-        margin-top: 1%;
-    }
-    .local-maps{
-        width:750px;
-        height:400px
-    }
-    .titulo-local{
-        font-size:22px;
-    }
-    .descricao{
-        font-size:17px;  
-    }
-    .descricao-enfase{
-        font-size:17px;  
-    }
-    .fundo-local {
-        background-color: #fff;
-        width: 100%;
-
-    }
-    .topico-seminfo{
-        font-size: 54px;
-    }
-    .descricao-topico{
-        font-size: 32px;
-        font-family: 'Ubuntu', sans-serif,  !important;
-        font-weight: 200;
+    .links:hover{
+        transition-duration: 0.3s;
+        background: #000918;
+        color:#fff;
+        text-decoration:none;
     }
 
 }
 
 
 @media (max-width:998px) {
-    .destaque-amarelo {
-        font-weight: 500;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    #slogan {
-        text-align: center;
-        font-size: 30px;
-    }
-    #data-seminfo{
-        text-align: center;
-        font-size: 24px;
-    }
-    .contorno-numeros {
-        font-size: 30px;
-        width: 80px;
-        height: 100px;
-        font-weight: 500;
-    }
-    #data-seminfo{
-        font-size: 23px;
-    }
-    
-    .local-maps{
-        width:600px;
-        height: 380px;
-
-    }   
-    .contorno-pontos {
-
-        font-weight: 700;
-        font-size: 50px;
-
-    }
-    .info {
-        font-size: 20px;
-    }
-
-    .fundo-local {
-        background-color: #fff;
-        width: 100%;
-    }
-
-    .titulo-local{
-        font-size:19px;
-    }
-    .descricao{
-        font-size:15px;  
-    }
-    .descricao-enfase{
-        font-size:15px;  
-    }
-
-    .topico-seminfo{
-        font-size: 54px;
-    }
     .descricao-topico{
-        font-size: 23px;
-        font-family: 'Ubuntu', sans-serif,  !important;
+        font-size: 22px;
         font-weight: 200;
     }
-    #triangulo-para-direita {
-        width: 0; 
-        height: 0; 
-        border-top: 21px solid transparent;
-        border-bottom: 21px solid transparent;
 
-    }
-    #triangulo-para-esquerda {
-        width: 0; 
-        height: 0; 
-        border-top: 21px solid transparent;
-        border-bottom: 21px solid transparent; 
-   
-      }
 
 }
 
-@media (max-width:830px) {
-    .destaque-amarelo {
-        font-size: 32px;
-    }
-
-    #slogan {
-        text-align: center;
-        font-size: 27px;
-    }
-    #data-seminfo{
-        font-size: 23px;
-    }
-
-    .contorno-numeros {
-        font-size: 30px;
-        width: 80px;
-        height: 100px;
-        font-weight: 500;
-    }
-
-    .local-maps{
-        width:590px;
-        height: 370px;
-    }   
-    .contorno-pontos {
-
-        font-weight: 700;
-        font-size: 50px;
-
-    }
-    .info {
-        font-size: 16px;
-    }
-
-
-    .fundo-local {
-        background-color: #fff;
-        width: 100%;
-
-    }
-    .topico-seminfo{
-        font-size: 54px;
-    }
-    .descricao-topico{
-        font-size: 21px;
-        font-family: 'Ubuntu', sans-serif,  !important;
-        font-weight: 200;
-    }
-    #triangulo-para-direita {
-        width: 0; 
-        height: 0; 
-        border-top: 19px solid transparent;
-        border-bottom: 19px solid transparent;
-    }
-    #triangulo-para-esquerda {
-        width: 0; 
-        height: 0; 
-        border-top: 19px solid transparent;
-        border-bottom: 19px solid transparent; 
-      }
-}
-
-@media Screen and (max-width:768px) {
-    .destaque-amarelo {
-        font-size: 30px;
-    }
-    #slogan {
-     
-        font-size: 25px;
-    }
-    #data-seminfo{
-        font-size:20px;
-        text-align: center;
-
-    }
-    .contorno-numeros {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .info {
-        font-size: 14px;
-    }
-
-    .local-maps { 
-        width: 400px;
-        height: 350px;
-    }
-    .fundo-local {
-        width: 100%;
-    }
-   
-    .topico-seminfo {
-        font-size: 37px;
-    }
-    .descricao-topico{
-        font-size: 19px;
-        font-family: 'Ubuntu', sans-serif,  !important;
-        font-weight: 200;
-    }
-    #triangulo-para-direita {
-        width: 0; 
-        height: 0; 
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent;
-    }
-    #triangulo-para-esquerda {
-        width: 0; 
-        height: 0; 
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent; 
-      }
-}
 @media Screen and  (max-width:670px) {
-    .destaque-amarelo{
-        font-size: 28px;
+    .links{
+        font-weight: 400;
+
+    }
+
+    .links:hover{
+        transition-duration: 0.3s;
+        background: #000918;
+        color:#fff;
+        text-decoration:none;
     }
     #slogan {
         font-size: 24px;
@@ -756,7 +419,7 @@ footer {
 
     }
     .local-maps{
-        width:360px;
+        width:100%;
         height:280px;
     }
     .topico-seminfo {
@@ -764,10 +427,9 @@ footer {
     }
     .descricao-topico{
         font-size: 18px;
-        font-family: 'Ubuntu', sans-serif,  !important;
         font-weight: 200;
     }
-
+    
     #triangulo-para-direita {
         width: 0; 
         height: 0; 
@@ -779,20 +441,6 @@ footer {
         height: 0; 
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent; 
-      }
-
-      .img-logo-seminfo{
-        width: 35%;
-   
-      }
-      .img-logo-ufs{
-        width: 15%;
-      }
-      .img-logo-itatech{
-        width: 30%;
-      }
-      .margin-bottom{
-          margin-bottom: 5%;
       }
 
 }

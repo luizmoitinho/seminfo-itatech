@@ -1,6 +1,6 @@
 <nav id="header" class="navbar navbar-expand-lg">
-            <a id="logo" class="nav" href='index.php' >
-                <span>Seminfo</span>
+            <a class="nav" href='index.php' >
+               <img src="assets/img/seminfo-logomarca.jpeg" id="logo">
             </a>
             <div class="navbar-toggler" data-toggle="collapse" data-target="#barra-navegacao"
                 aria-controls="barra-navegacao" onclick="transformIcon()" aria-expanded="false" aria-label="Alterna navegação">
@@ -11,18 +11,26 @@
                 </span>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
-                <ul class="nav navbar-nav">
-                     <li>
-                        <a href="index.php">Inicio</a>
+                <ul class="navbar-nav">
+
+                    <li >
+                        <a href="index.php"class="links" >Sobre</a>
                     </li>
-                    <li>
-                        <a href="#descricao_seminfo">Sobre</a>
+
+                    <li  >
+                        <a href="#descricao_seminfo " class="links">Atividades</a>
                     </li>
-                    <li>
-                        <a href="#Apoio">Apoio</a>
+
+                    <li >
+                        <a href="#Apoio" class="links">Patrocinadores</a>
                     </li>
-                    <li>
-                        <a href="#palestras" >Palestras</a>
+
+                    <li  >
+                        <a href="#Apoio" class="links">Palestrantes</a>
+                    </li>
+
+                    <li >
+                        <a href="#palestras" class="links">Local</a>
                     </li>
                 </ul>
             </div>

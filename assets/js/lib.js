@@ -1,4 +1,4 @@
-$("#painel-cronometro").hide();
+/*$("#painel-cronometro").hide();
 $('body').hide();
 $(document).ready(function(){
  setTimeout(function(){
@@ -8,8 +8,35 @@ $(document).ready(function(){
         $("#painel-cronometro").fadeIn(1000)
     },1500)
 
-})
+})*/
 
+if(document.getElementById('cronometro')){
+    
+    this.setInterval(function () {
+        atualizarCronometro()
+    }, 1000);
+    
+    showCronometro();
+}
+
+
+$(".logo-patrocinador").on('mouseenter',function(response){
+    console.log($(this).children()[1]);
+    $(this).children('.detalhe-patrocinador').fadeIn("slow")
+});
+$(".logo-patrocinador").on('mouseleave',function(response){
+    $(this).children('.detalhe-patrocinador').fadeToggle("slow")
+
+
+});
+
+$(".dt-patrocionio").click(function(){
+    if($(this).next().css("visibility")=="visible")
+         $(this).next().css("visibility","hidden")
+    else
+        $(this).next().css("visibility","visible")
+    
+})
 function transformIcon() {
     let icons_bar = document.getElementsByClassName("icon-bar");
     if(icons_bar[0].style.transform=="")
@@ -69,14 +96,6 @@ function selecionaPatrocinio(){
 }
 
 
-if(document.getElementById('cronometro')){
-    
-    this.setInterval(function () {
-        atualizarCronometro()
-    }, 1000);
-    
-    showCronometro();
-}
 
 window.addEventListener('orientationchange', function(){
     switch(window.orientation){ 

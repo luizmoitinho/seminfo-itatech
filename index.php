@@ -15,7 +15,7 @@
         </div>
     </div>
     <main>
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="row ">
                 <div id="painel-cronometro" class="col-md-12">
                     <div class="flex-column">
@@ -51,8 +51,6 @@
                         <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de
                             Itabaiana.</span>
                     </div>
-
-
                     <a href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao"
                         target="_blank" class="btn-inscrever">
                         <span>Inscreva-se</span>
@@ -60,12 +58,12 @@
                 </div>
             </div>
         </div>
-        <div class="container margin-bottom ">
+        <div class="container container-div">
             <div class="flex-column">
-                <span class="titulo-topicos">SEMINFO</span>
+                <span class="titulo-topicos">Sobre</span>
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 ">
                     <p class="descricao-topico">
                         A Semana de Informática da Universidade Federal de Sergipe – Campus
                         Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
@@ -77,130 +75,49 @@
                         instituições.
                     </p>
                 </div>
-                <div class="col-md-4  flex-column">
-                    <img src="assets/img/ufs.jfif" class="img-logo-ufs margin-bottom">
-                    <img src="assets/img/seminfo-logomarca.jpeg" class="img-logo-seminfo margin-bottom">
-                    <img src="assets/img/logo-itatech.jpeg" class="img-logo-itatech margin-bottom">
+                <div class="col-md-4 flex-column">
+                   
                 </div>
 
             </div>
         </div>
-        <div class="container  bg-white margin-bottom">
+        <div class="container margin-bottom ">
             <div class="flex-column">
-                <span class="titulo-topicos">Local</span>
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <p class="descricao-topico">
-                        <iframe class="local-maps" id="maps"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.6844076986067!2d-37.43792471479275!3d-10.681586119682526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70ffa833420217d%3A0xa0b15971b80f4151!2sUniversidade%20Federal%20de%20Sergipe%2C%20Campus%20Itabaiana!5e0!3m2!1spt-BR!2sbr!4v1572717954299!5m2!1spt-BR!2sbr"
-                            frameborder="0" s allowfullscreen=""></iframe>
-                        </iframe>
-                    </p>
+                    <iframe class="local-maps" id="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.6844076986067!2d-37.43792471479275!3d-10.681586119682526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70ffa833420217d%3A0xa0b15971b80f4151!2sUniversidade%20Federal%20de%20Sergipe%2C%20Campus%20Itabaiana!5e0!3m2!1spt-BR!2sbr!4v1572717954299!5m2!1spt-BR!2sbr"
+                        frameborder="0"  allowfullscreen=""></iframe>
+                    </iframe>
                 </div>
-                <div class="col-md-4 detalhe-localizacao ">
+                <div class="col-md-4 detalhe-localizacao">
                     <div>
-                        <div class="font-weight-bold">Universidade Federal de Sergipe</div>
-                        <div class="font-weight-light">Campus Prof. Alberto Carvalho</div>
-                        <div class="font-weight-lighter">11/12/2019 - 13/12/2019</div>
-                        <div class="font-weight-lighter">Hall de entrada - Auditório</div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="container  flex-column bg-white margin-bottom">
-            <div class="row">
-                <span class="titulo-topicos">
-                    Apoio
-                </span>
-
-            </div>
-            <hr>
-            <div class="container margin-bottom">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador bg-dark">
-
-                            </div>
-
-                            <div class="detalhe-patrocinador flex-column">
-                                <div>Sua empresa aqui!</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador bg-dark">
-
-                            </div>
-
-                            <div class="detalhe-patrocinador flex-column">
-                                <div>Sua empresa aqui!</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador bg-dark">
-                                <img src="assets/img/seminfo-logo.png" width="200px" height="200px">
-                                <div class="detalhe-patrocinador">
-                                    <div>Sua empresa aqui!</div>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador bg-dark">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador bg-dark">
-
-                            </div>
-
-                            <div class="detalhe-patrocinador flex-column">
-                                <div>Sua empresa aqui!</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador bg-dark">
-
-                            </div>
-
-                            <div class="detalhe-patrocinador">
-                                <div>Sua empresa aqui!</div>
-                            </div>
-                        </div>
+                        <h2 class="font-weight-bold">Local do Evento</h2>
+                        <h4 class="font-weight-lighter">11/12/2019 - 13/12/2019</h4>
+                        <h5 class="ont-weight-light">Universidade Federal de Sergipe</h5>
+                        <h5 class="font-weight-light">Campus Prof. Alberto Carvalho</h5>
+                       
+                        <h5 class="font-weight-lighter">Hall de entrada - Auditório</h5>
                     </div>
                 </div>
             </div>
         </div>
-
-        </div>
-
-        <div class="container  bg-white margin-bottom">
-            <div class="flex-column">
-                <span class="titulo-topicos">Colabore com o evento</span>
-            </div>
+    
+        <div class="container  container-div">
+            
+                
+            
             <div class="row flex-column">
-                <div class="col-md-8">
+                <span class="titulo-topicos">Colabore com o evento</span>
+                <div class="col-md-12">
                     <div class="flex-column">
                         <span class="descricao-topico">Não deixe sua empresa fora de um dos maiores eventos de
                             tecnologia do Estado de Sergipe!
                         </span>
                     </div>
                     <div class="flex-column  margin-bottom">
-                        <a href="apoie_me.php" class="btn-inscrever">
+                        <a href="apoie_me.php" class="btn-inscrever-inverse">
                             <span>Clique Aqui!</span>
                         </a>
                     </div>
@@ -210,7 +127,79 @@
 
         </div>
 
+        <div class="container container-div ">
+            <span class="titulo-topicos">Patrocinadores</span>
+            <div class="container-fluid margin-bottom">
+                <div class="row ">
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador flex-column">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador flex-column">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador flex-column">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="flex-column painel-patrocinador flex-column">
+                            <div class="logo-patrocinador ">
+                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="container mais-patrocinadores">
+                        <div class="row">
+
+                        <div class="col-md-2">
+                                <div class="flex-column painel-patrocinador flex-column">
+                                    <div class="logo-patrocinador ">
+                                        <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="flex-column painel-patrocinador flex-column">
+                                    <div class="logo-patrocinador ">
+                                        <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div> 
+
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info btn-lg" id="btn-ver-mais">+ Ver mais</button>
+        </div>
     </main>
     <?php require_once("footer.php")  ?>
     <script src="assets/js/jquery.min.js"></script>

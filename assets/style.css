@@ -15,12 +15,13 @@ a:hover{text-decoration:none;}
 body{
     width: 100%;
     height: 100%;
-    font-family: 'Ubuntu', sans-serif,  !important;
 
 }
-
+.text-black{
+    color:#000,!important;
+}
 .bg-cinza-light{
-    background-color: rgb(185, 188, 194);
+    background-color:#eff0f3;
 }
 .bg-white{
     background-color:rgb(255, 255, 255),!important;
@@ -63,18 +64,11 @@ body{
     border-right:25px solid  rgb(232, 248, 6); 
     position: relative;
   }
-  .img-logo-seminfo{
-    width: 200px;
-    height:70px;
-  }
-  .img-logo-ufs{
-    width:100px;
-  }
-  .img-logo-itatech{
-    width: 250px;
-  }
+
+
+ 
   .margin-bottom{
-      margin-bottom:2%;
+      margin-bottom:3%;
   }
   .img-fundo-ufs{
       opacity: 0.7;
@@ -84,6 +78,16 @@ body{
 
   }
 
+.container-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin-bottom:3% ;
+    background: #fff;
+    box-shadow: 2px 2px 5px #ccc;
+}
 /* ==========================  barra navegacao ======================*/
 #header {
     padding-left: 5%;
@@ -92,14 +96,7 @@ body{
     background-color: rgb(255, 253, 253);
 }
 #logo {
-    font-family: 'Rochester', cursive;
     color:#fff;
-    font-size: 50px;  
-    font-weight: 800;
-    font-stretch: extra-expanded;
-    text-decoration: none;
-    transition-duration: 0.8s;
-
     width: 200px;
     height: 50px;
 }
@@ -127,8 +124,8 @@ body{
     background-color: rgb(255, 253, 253);
     border-radius: 50%;
     border: 0px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,10 +149,14 @@ body{
 }
 
 #btn-menu :first-child {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000000;
     margin-top: 0px;
+    transition: 0.4s;
 
 }
-
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -175,7 +176,7 @@ body{
 .background{
     background: url("img/bg-sinapse.jpg") fixed right bottom ;
     background-size: 1900px;
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     padding:0;
    
@@ -185,13 +186,13 @@ body{
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 600px;
+    height: 500px;
     opacity: 0.6;
 }
 #painel-cronometro{
     text-align: center;
     position: relative;
-    margin-top: -500px;
+    margin-top: -450px;
     margin-bottom: 8%;
     font-size: 28px;
     color:#fff
@@ -226,6 +227,31 @@ body{
     background:  #042d79;
     cursor: pointer;
     transition-duration: 1s;
+   
+}
+.btn-inscrever span{
+    font-size: 22px;
+}
+.btn-inscrever-inverse{
+    padding:2% 4% 2% 4%;
+    color:#fff;
+    border-color:1px solid #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif,  !important;
+    background:  #042d79;
+    cursor: pointer;
+    transition-duration: 1s;
+
+
+}
+.btn-inscrever-inverse:hover{
+    text-decoration: none;
+    border:none;
+    transition-duration: 1s;
+    color:#fff;
+    background: #3775e7;
+
 }
 
 .btn-inscrever:hover{
@@ -239,16 +265,20 @@ body{
 /*============================ posts seminfo =================================*/
 
 .titulo-topicos{
-    font-size: 60px;
-    color:#042d79;
-    font-weight: 500;
-
+    font-size: 30px;
+    columns: #333333;;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;
+    margin:2%;
 }
 .descricao-topico{
-    font-size: 30px;
     text-align:  justify;
-    padding:1%;
-    padding-bottom:2%
+    padding-bottom:2%;
+    font-size: 20px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
 }
 
 /*============================ localizacao seminfo =================================*/
@@ -257,23 +287,18 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
+    background-color: #fff;
 }
+
 .local-maps{
     width: 100%;
     height: 450px;
 }
-
 /*==================    ÁREA PATROCINADORES       ====================*/
 
 
-.descricao-topico{
-    font-size: 30px;
-    color: #000;
-    font-family: 'Ubuntu', sans-serif,  !important;
-    font-weight: 300;
-    text-align: justify;
-}
+
 .btn-apoio{
     margin-top:2%;
     width: 42%;
@@ -318,23 +343,24 @@ body{
 .painel-patrocinador{
     margin-bottom:5% ;
 }
-
-.logo-patrocinador{
-    width:100%;
-    height:220px;
-    box-shadow: 2px 2px 2px;
-}
-
 .detalhe-patrocinador{
+
+    display:none;
+    position: absolute;
+    text-align: center;
+    opacity: 0.7;
+    margin-top:-72%;
+    font-size: 20px;
     background-color: rgb(255, 255, 255);
-    position: relative;
-    width:100%;
-    height: 100%;
-    text-align:left;
-    padding:5%;
-    display: none;
     color:#000;
+  
+  
 }
+.mais-patrocinadores{
+    display: none;
+}
+
+/*==================    FOOTER       ====================*/
 
 footer {
     left: 0;
@@ -385,11 +411,37 @@ footer {
         font-size: 22px;
         font-weight: 200;
     }
+    .destaque-seminfo{
+        font-size: 28px;
+    }
+    #slogan {
+        font-size: 23px;
+    }
+    #data-seminfo{
+        font-size:20px;
+        text-align: center;
+
+    }
 
 
 }
 
-@media Screen and  (max-width:670px) {
+@media Screen and  (max-width:690px) {
+    /* ==========================  barra navegacao ======================*/
+    .background{
+        height: 400px;
+    }
+    /* ==========================  barra navegacao ======================*/
+    .painel-principal{
+
+        height: 400px;
+    }
+    #painel-cronometro{
+
+        margin-top: -350px;
+
+    }
+
     .links{
         font-weight: 400;
 
@@ -401,8 +453,11 @@ footer {
         color:#fff;
         text-decoration:none;
     }
+    .destaque-seminfo{
+        font-size: 25px;
+    }
     #slogan {
-        font-size: 24px;
+        font-size: 20px;
     }
     #data-seminfo{
         font-size:18px;
@@ -422,8 +477,8 @@ footer {
         width:100%;
         height:280px;
     }
-    .topico-seminfo {
-        font-size: 25px;
+    .titlulo-topicos{
+        font-size: 40px;
     }
     .descricao-topico{
         font-size: 18px;

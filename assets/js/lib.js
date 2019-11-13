@@ -21,13 +21,23 @@ if(document.getElementById('cronometro')){
 
 
 $(".logo-patrocinador").on('mouseenter',function(response){
-    console.log($(this).children()[1]);
-    $(this).children('.detalhe-patrocinador').fadeIn("slow")
+
+    $(this).children('.detalhe-patrocinador').fadeIn(400)
 });
 $(".logo-patrocinador").on('mouseleave',function(response){
-    $(this).children('.detalhe-patrocinador').fadeToggle("slow")
+    $(this).children('.detalhe-patrocinador').fadeToggle(400)
+});
 
-
+$('#btn-ver-mais').click(function(){
+    if($('.mais-patrocinadores').css("display")=="none"){
+        $('#btn-ver-mais').text('- Esconder');
+        $('.mais-patrocinadores').slideDown();
+    }
+    else{
+        $('#btn-ver-mais').text('+ Ver mais');
+        $('.mais-patrocinadores').slideUp();
+    
+    }
 });
 
 $(".dt-patrocionio").click(function(){
@@ -36,7 +46,8 @@ $(".dt-patrocionio").click(function(){
     else
         $(this).next().css("visibility","visible")
     
-})
+});
+
 function transformIcon() {
     let icons_bar = document.getElementsByClassName("icon-bar");
     if(icons_bar[0].style.transform=="")

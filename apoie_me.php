@@ -3,7 +3,7 @@
     <title>Apoio a SEMINFO 2019</title>
     <?php require_once("head.php")?>
 
-<body>
+<body class="bg-cinza-light">
         <?php require_once("barra_navegacao.php")?>
         <main>
             <div class="painel-eventos flex-column">

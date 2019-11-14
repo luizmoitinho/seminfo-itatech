@@ -1,76 +1,42 @@
 <?php
+// Recebendo dados do formulário
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$tel = $_POST['telefone'];
+$msg = $_POST['msg'];
+$subject = "Mensagem da SEMINFO -  2019";
+
+if(array_key_exists('opcoes',$_POST) )
+    $opcoes = $_POST['opcoes'];
+else
+    $opcoes="Não selecionou nenhum tipo de patrocinio";
+
+
+$headers = "Content-Type: text/html; charset=utf-8\r\n";
+$headers .= "From: $email\r\n";
+$headers .= "Reply-To: $email\r\n";
+
+// Dados que serão enviados
+$corpo = "Formulário da página de contato - SEMINFO <br>";
+$corpo .= "Nome       : " . $nome . " <br>";
+$corpo .= "Telefone   : " . $tel . " <br>";
+$corpo .= "Email      : " . $email . " <br>";
+$corpo .= "Patrocionio: " . $opcoes . " <br>";
+$corpo .= "Mensagem   : " . $msg . " <br>";
+
+// Email que receberá a mensagem (Não se esqueça de substituir)
+$email_to = 'contato@itatechjr.com.br';
+
+// Enviando email
+$status = mail($email_to, mb_encode_mimeheader($subject, "utf-8"), $corpo, $headers);
+
+if ($status){
+
+  header('location:apoie_me.php?status=sucesso');
+}
+else{
+    header('location:apoie_me.php?status=erro');
+}
+
  
-    $nome = $_POST['nome'];
-    $telefone = $_POST['telefone'];
-    $email = $_POST['email'];
-    $mensagem = $_POST['msg'];
-    if(array_key_exists('apoio',$_POST) )
-        $opcoes = $_POST['apoio'];
-    else
-        $opcoes="Não selecionou nenhum tipo de patrocinio";
-    $assunto = "SEMINFO -2019";
-   
-    $para = "luizcarlos_costam@hotmail.com";
-
-    $corpo_email = "
-    <style type='text/css'>
-    body {
-    margin:0px;
-    font-family:Verdane;
-    font-size:12px;
-    color: #666666;
-    }
-    a{
-    color: #666666;
-    text-decoration: none;
-    }
-    a:hover {
-    color: #FF0000;
-    text-decoration: none;
-    }
-    </style>
-        <html>
-            <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
-                <tr>
-                <td>
-    <tr>
-                    <td width='500'>Nome:$nome</td>
-                    </tr>
-                    <tr>
-                    <td width='320'>E-mail:<b>$email</b></td>
-        </tr>
-        <tr>
-                    <td width='320'>Telefone:<b>$telefone</b></td>
-                    </tr>
-        <tr>
-                    <td width='320'>Opções:$opcoes</td>
-                    </tr>
-                    <tr>
-                    <td width='320'>Mensagem:$mensagem</td>
-                    </tr>
-                </td>
-            </tr>  
-            </table>
-        </html>
-    ";
-
-
-   
-    $envio = enviaEmail($email, $assunto, $mensagem, $para);
-    if($envio){
-        echo "mail_ok.php";
-    } else {
-        echo "mail_error.php";
-    }
-    
-
-    function enviaEmail($de, $assunto, $mensagem, $para) {
-        $headers = "From: $email_servidor\r\n" .
-                   "Reply-To: $de\r\n" .
-                   "X-Mailer: PHP/" . phpversion() . "\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-      
-      mail($para, $assunto, nl2br($corpo_email), $headers);
-    }
 ?>

@@ -88,6 +88,11 @@ body{
     background: #fff;
     box-shadow: 2px 2px 5px #ccc;
 }
+.container-card{
+    background: #fff;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
 /* ==========================  barra navegacao ======================*/
 #header {
     padding-left: 5%;
@@ -104,20 +109,34 @@ body{
     cursor: pointer;
 }
 
+#barra-navegacao li {
+    font-size: 15px;
+    margin: 8px;
+}
+
+
 .links{
+    color: #333333;
     font-weight: 600;
-    padding:19px 10px 20px;
     transition-duration: 0.3s;
     border-end-end-radius: 2px #fff;
+    padding:10px
 }
 
 .links:hover{
-    transition-duration: 0.3s;
-    background: #000918;
-    color:#fff;
-    text-decoration:none;
+background-color: #114dbd;
+    border-radius: 5px;
+    color: rgb(251, 255, 251);
+    transition-duration: .5s;
+}
+
+#barra-navegacao li a:link{
+    text-decoration: none;
 
 }
+
+
+
 
 #btn-menu {
     cursor: pointer;
@@ -324,10 +343,12 @@ body{
 }
 
 .contato-apoio {
-
     background-color: rgb(255, 255, 255);
-    margin-top: 10%
-    
+    margin-top: 5%;
+    box-sizing: border-box;
+}
+.form-google{
+    overflow-y: hidden;
 }
 .item-contato{
     margin:10px
@@ -344,20 +365,31 @@ body{
     margin-bottom:5% ;
 }
 .detalhe-patrocinador{
-
-    display:none;
-    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    position:absolute;
+    padding: 10px;
     text-align: center;
-    opacity: 0.7;
-    margin-top:-72%;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
+    opacity: 0.8;
     color:#000;
-  
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.painel-patrocinador:hover{
+    cursor: pointer;
 }
 .mais-patrocinadores{
     display: none;
+}
+.img-patrocinador-circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1%;
 }
 
 /*==================    FOOTER       ====================*/
@@ -391,17 +423,6 @@ footer {
 
 
 @media (max-width:1100px){
-    .links{
-        font-weight: 400;
-        padding:0.6%
-    }
-
-    .links:hover{
-        transition-duration: 0.3s;
-        background: #000918;
-        color:#fff;
-        text-decoration:none;
-    }
 
 }
 
@@ -427,7 +448,6 @@ footer {
 }
 
 @media Screen and  (max-width:690px) {
-    /* ==========================  barra navegacao ======================*/
     .background{
         height: 400px;
     }
@@ -442,17 +462,6 @@ footer {
 
     }
 
-    .links{
-        font-weight: 400;
-
-    }
-
-    .links:hover{
-        transition-duration: 0.3s;
-        background: #000918;
-        color:#fff;
-        text-decoration:none;
-    }
     .destaque-seminfo{
         font-size: 25px;
     }

@@ -1,6 +1,6 @@
-<footer class="container-fluid">
+<footer class="container-fluid ">
         <div clas="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
                 <div class="flex-column">
                     <div class="flex-row">
                         <div class="item-footer"> 

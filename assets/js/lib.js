@@ -1,5 +1,7 @@
+$('.detalhe-patrocinador').hide();
 /*$("#painel-cronometro").hide();
 $('body').hide();
+
 $(document).ready(function(){
  setTimeout(function(){
      $("body").fadeIn(1000)
@@ -21,7 +23,6 @@ if(document.getElementById('cronometro')){
 
 
 $(".logo-patrocinador").on('mouseenter',function(response){
-
     $(this).children('.detalhe-patrocinador').fadeIn(400)
 });
 $(".logo-patrocinador").on('mouseleave',function(response){
@@ -91,13 +92,13 @@ function selecionaPatrocinio(){
     if(checkbox.checked){
         tipos_patrocinios.innerHTML=
             '<div  class="item-contato">'+              
-            '<select class="form-control tipo-patrocinio" name="opcoes">'+
+            '<select class="form-control tipo-patrocinio" name="opcoes" required>'+
             '<option  autofocus></option>'+
             '<option  disabled>Seleciona uma categoria</option>'+
-            '<option  value="1">Diamante</option>'+
-            '<option  value="2">Ouro</option>'+
-            '<option  value="3">Prata</option>'+
-            '<option  value="4">Bronze</option>'+
+            '<option  value="Diamante">Diamante</option>'+
+            '<option  value="Ouro">Ouro</option>'+
+            '<option  value="Prata">Prata</option>'+
+            '<option  value="Bronze">Bronze</option>'+
             '</select>'+
             '<div>'
     }

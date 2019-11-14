@@ -58,12 +58,15 @@
                 </div>
             </div>
         </div>
+        <div class="container margin-bottom container-card" id="sobre">
+            <?php  require_once('atividades.php')?>
+        </div>
         <div class="container container-div">
             <div class="flex-column">
                 <span class="titulo-topicos">Sobre</span>
             </div>
             <div class="row">
-                <div class="col-md-8 ">
+                <div class="col-md-12 ">
                     <p class="descricao-topico">
                         A Semana de Informática da Universidade Federal de Sergipe – Campus
                         Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
@@ -75,13 +78,13 @@
                         instituições.
                     </p>
                 </div>
-                <div class="col-md-4 flex-column">
+               <!-- <div class="col-md-4 flex-column">
                    
                 </div>
-
+-->
             </div>
         </div>
-        <div class="container margin-bottom ">
+        <div class="container margin-bottom " id="localizacao">
             <div class="flex-column">
             </div>
             <div class="row">
@@ -104,10 +107,7 @@
             </div>
         </div>
     
-        <div class="container  container-div">
-            
-                
-            
+        <div class="container  container-div" id="patrocinio">
             <div class="row flex-column">
                 <span class="titulo-topicos">Colabore com o evento</span>
                 <div class="col-md-12">
@@ -127,78 +127,31 @@
 
         </div>
 
-        <div class="container container-div ">
+        <div class="container container-div" id="patrocinio">
             <span class="titulo-topicos">Patrocinadores</span>
-            <div class="container-fluid margin-bottom">
+            <div class="container-fluid margin-bottom border-bottom">
                 <div class="row ">
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid">
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="flex-column painel-patrocinador flex-column">
-                            <div class="logo-patrocinador ">
-                                <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container mais-patrocinadores">
-                        <div class="row">
-
-                        <div class="col-md-2">
-                                <div class="flex-column painel-patrocinador flex-column">
-                                    <div class="logo-patrocinador ">
-                                        <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
-                                    </div>
+                    <div class="col-md-3 painel-patrocinador">
+                        <div class="logo-patrocinador">
+                            <img src="assets/img/seminfo-logo.png" class=" rounded-lg img-fluid">
+                            <div class="detalhe-patrocinador container ">
+                                <div class="flex-column">
+                                    <span class="font-weight-bold">Descricão</span> informação da minha empresa
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <div class="flex-column painel-patrocinador flex-column">
-                                    <div class="logo-patrocinador ">
-                                        <img src="assets/img/seminfo-logo.png" class="img-patrocinador img-fluid rounded">
-                                    </div>
-                                </div>
-                            </div> 
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-9 detalhe-localizacao">
+                        <div class="descricao-topico ">
+                           Não deixe sua empresa fora de um dos maiores enventos de tecnologia do estado de Sergipe! 
 
                         </div>
-                            
                     </div>
                 </div>
             </div>
-            <button class="btn btn-info btn-lg" id="btn-ver-mais">+ Ver mais</button>
+            (Passe o mouse em cima da imagem)
+            <!--<button class="btn btn-info btn-lg" id="btn-ver-mais">+ Ver mais</button> -->
         </div>
     </main>
     <?php require_once("footer.php")  ?>

@@ -11,27 +11,19 @@
                 </span>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
-                <ul class="navbar-nav">
-
-                    <li >
-                        <a href="index.php"class="nav links" >Sobre</a>
-                    </li>
-
-                    <li  >
-                        <a href="#descricao_seminfo " class="nav links">Atividades</a>
-                    </li>
-
-                    <li >
-                        <a href="#Apoio" class="nav links">Patrocinadores</a>
-                    </li>
-
-                    <li  >
-                        <a href="#Apoio" class="nav links">Palestrantes</a>
-                    </li>
-
-                    <li >
-                        <a href="#palestras" class="nav links">Local</a>
-                    </li>
+                <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.php"class=" links" >Home</a>
+                        </li>
+                        <li>
+                            <a href="index.php?#sobre"class=" links" >Sobre</a>
+                        </li>
+                        <li>
+                            <a href="index.php?#patrocinio" class=" links">Patrocinadores</a>
+                        </li>
+                        <li>
+                            <a href="index.php?#localizacao" class=" links">Local</a>
+                        </li>
                 </ul>
-            </div>
+        </div>
 </nav>

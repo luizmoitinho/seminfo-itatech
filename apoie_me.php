@@ -6,19 +6,48 @@
 <body class="bg-cinza-light">
         <?php require_once("barra_navegacao.php")?>
         <main>
-            <div class="painel-eventos flex-column">
-                    <div class="container ">
-                        <div class="flex-column ">
-                            <div class="col-md-7 contato-apoio ">
-                                <iframe class="col-md-12 form-google" src="https://docs.google.com/forms/d/e/1FAIpQLSf2g8sN8Z-SVZgf7AGAMbC83HpHAsKw8ezvT2ZSrpFTihVCvw/viewform?embedded=true" width="640" height="1300" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-                            </div>
-                        </div>
-                    </div>
+         
+            <div class="container contato-apoio">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="flex-column">
+                        
+                            <span class="titulo-topicos">Fale Conosco</span>
+                            <form class="form-group col-md-5" action="enviar_email.php" method="POST">
+                                <input class="form-control item-contato" type="text" placeholder="Digite Seu Nome" name="nome">
+                                <input class="form-control item-contato" placeholder="E-mail" type="email" name="email">
+                                <input class="form-control item-contato" placeholder="Telefone para contato" type="number" name="telefone">
+                                <div class="form-check">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="patrocinio" onclick="selecionaPatrocinio()">
+                                        <label for="patrocinio" class="form-check-label">Desejo apoiar o evento </label>
+                                    </div>
+                                </div>
+                                <div id="tipos-patrocinios">  
+                                </div>
+                                <Textarea class="form-group col-md-12 item-contato border" name="msg" rows="5" placeholder="Digite aqui alguma dúvida ou informação"></Textarea>
+                                <button class="btn-lg btn-success">Enviar</button>
+                            </form>
+                            <?php  if (array_key_exists('status',$_GET)):
+                                if($_GET['status']=='sucesso'): ?>
+                                <div class="alert alert-success" role="alert">
+                                    Obrigado por entrar em contato! Nossa equipe analisará as informações.
+                                </div>
+                                <?php else: ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        Ocorreu um erro ao entrar em contato conosco. Tente novamente, mais tarde!
+                                    </div>
+                                 <?php endif;?>
+
+                            <?php endif;?>
+                        </div>  
+                    </div>  
                 </div>
+            </div>
+            
         </main>
         <?php require_once("footer.php")?>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/lib.js"></script>
 </body>
-
 </html>

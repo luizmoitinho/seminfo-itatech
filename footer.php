@@ -4,7 +4,7 @@
                 <div class="flex-column">
                     <div class="flex-row">
                         <div class="item-footer"> 
-                            Produzido por: <span class="azul-destaque"><a href="http://www.itatechjr.com.br/Main/">Itatech Jr</a></span>
+                            Produzido por: <span class="azul-destaque"><a target="_blank" href="http://itatechjr.com.br/">Itatech Jr</a></span>
                         </div>
                     </div>
                     <span id="direitos"> 

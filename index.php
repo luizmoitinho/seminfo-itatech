@@ -2,11 +2,8 @@
 <html lang="pt-br">
 <title>SEMINFO - UFS 2019</title>
 <?php require_once("head.php")?>
-
 <body class="bg-cinza-light">
-
     <?php require_once("barra_navegacao.php")?>
-
     <div class="container-fluid  background">
         <div class="row">
             <div class="painel-principal">

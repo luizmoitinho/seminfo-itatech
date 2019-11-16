@@ -404,6 +404,7 @@ footer {
     align-items: center;
     display:flex;
     align-items: flex-end;
+    text-align: center;
     position: relative;
 }
 

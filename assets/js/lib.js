@@ -1,4 +1,5 @@
 $('.detalhe-patrocinador').hide();
+$('#tipos-patrocinios').hide();
 /*$("#painel-cronometro").hide();
 $('body').hide();
 
@@ -88,22 +89,11 @@ function showCronometro() {
 
 function selecionaPatrocinio(){
     let checkbox =  document.getElementById("patrocinio");
-    let tipos_patrocinios =  document.getElementById("tipos-patrocinios");
     if(checkbox.checked){
-        tipos_patrocinios.innerHTML=
-            '<div  class="item-contato">'+              
-            '<select class="form-control tipo-patrocinio" name="opcoes" required>'+
-            '<option  autofocus></option>'+
-            '<option  disabled>Seleciona uma categoria</option>'+
-            '<option  value="Diamante">Diamante</option>'+
-            '<option  value="Ouro">Ouro</option>'+
-            '<option  value="Prata">Prata</option>'+
-            '<option  value="Bronze">Bronze</option>'+
-            '</select>'+
-            '<div>'
+        $("#tipos-patrocinios").slideDown();        
     }
     else{
-        tipos_patrocinios.innerHTML="";
+        $("#tipos-patrocinios").slideToggle();
     }
 }
 

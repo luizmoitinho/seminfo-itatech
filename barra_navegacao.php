@@ -16,13 +16,13 @@
                             <a href="index.php"class=" links" >Home</a>
                         </li>
                         <li>
-                            <a href="index.php?#sobre"class=" links" >Sobre</a>
+                            <a href="#sobre"class=" links" >Sobre</a>
                         </li>
                         <li>
-                            <a href="index.php?#patrocinio" class=" links">Patrocinadores</a>
+                            <a href="#patrocinio" class=" links">Patrocinadores</a>
                         </li>
                         <li>
-                            <a href="index.php?#localizacao" class=" links">Local</a>
+                            <a href="#localizacao" class=" links">Local</a>
                         </li>
                 </ul>
         </div>

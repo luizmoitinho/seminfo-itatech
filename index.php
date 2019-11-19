@@ -124,7 +124,7 @@
 
         </div>
 
-        <div class="container container-div" id="patrocinio">
+        <div class="container container-div margin-bottom" id="patrocinio">
             <span class="titulo-topicos">Patrocinadores</span>
             <div class="container-fluid margin-bottom border-bottom">
                 <div class="row ">
@@ -141,16 +141,17 @@
                     </div>
                     <div class="col-md-9 detalhe-localizacao">
                         <div class="descricao-topico ">
-                           Não deixe sua empresa fora de um dos maiores enventos de tecnologia do estado de Sergipe! 
 
                         </div>
                     </div>
                 </div>
             </div>
             (Passe o mouse em cima da imagem)
-            <!--<button class="btn btn-info btn-lg" id="btn-ver-mais">+ Ver mais</button> -->
         </div>
+        <!-- apoie-me -->
+        <?php require_once("apoie_me.php");?>
     </main>
+    <!-- footer -->
     <?php require_once("footer.php")  ?>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/lib.js"></script>

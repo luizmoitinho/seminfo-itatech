@@ -30,6 +30,10 @@ body{
 .bg-gradient {
     background: linear-gradient(to right,rgb(1, 120, 231), #042d79)
 }
+.bg-black{
+    background-color: #000;
+    opacity: 0.5;
+}
 
 .borda {    
     text-decoration: line;

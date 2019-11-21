@@ -30,10 +30,6 @@ body{
 .bg-gradient {
     background: linear-gradient(to right,rgb(1, 120, 231), #042d79)
 }
-.bg-black{
-    background-color: #000;
-    opacity: 0.5;
-}
 
 .borda {    
     text-decoration: line;
@@ -49,7 +45,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
 
 
 #triangulo-para-direita {
@@ -96,7 +91,7 @@ body{
     background: #fff;
     box-shadow: 2px 2px 5px #ccc;
 }
-
+.
 /* ==========================  barra navegacao ======================*/
 #header {
     padding-left: 5%;
@@ -117,8 +112,6 @@ body{
     font-size: 15px;
     margin: 8px;
 }
-
-
 .links{
     color: #333333;
     font-weight: 600;
@@ -198,9 +191,7 @@ background-color: #114dbd;
 /* ==========================  barra navegacao ======================*/
 .background{
     background: url("img/bg-sinapse.jpg") fixed right bottom ;
-    background-size: 1900px;
     height: 500px;
-    background-repeat: no-repeat;
     padding:0;
    
 }
@@ -403,7 +394,6 @@ footer {
     bottom: 0;
     width: 100%;
     padding:4%;
-    margin-top: 4%;
     background: rgb(36, 36, 37);
     align-items: center;
     display:flex;
@@ -454,16 +444,16 @@ footer {
 
 @media Screen and  (max-width:690px) {
     .background{
-        height: 400px;
+        height: 450px;
     }
     /* ==========================  barra navegacao ======================*/
     .painel-principal{
 
-        height: 400px;
+        height: 450px;
     }
     #painel-cronometro{
 
-        margin-top: -350px;
+        margin-top: -400px;
 
     }
 

@@ -63,7 +63,7 @@
                 <span class="titulo-topicos">Sobre</span>
             </div>
             <div class="row">
-                <div class="col-md-12 ">
+                <div class="col-md-8 ">
                     <p class="descricao-topico">
                         A Semana de Informática da Universidade Federal de Sergipe – Campus
                         Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
@@ -75,10 +75,10 @@
                         instituições.
                     </p>
                 </div>
-               <!-- <div class="col-md-4 flex-column">
-                   
+               <div class="col-md-4 flex-column">
+                    <img src="assets/img/conjunto.png">
                 </div>
--->
+
             </div>
         </div>
         <div class="container margin-bottom " id="localizacao">
@@ -102,26 +102,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="container  container-div" id="patrocinio">
-            <div class="row flex-column">
-                <span class="titulo-topicos">Colabore com o evento</span>
-                <div class="col-md-12">
-                    <div class="flex-column">
-                        <span class="descricao-topico">Não deixe sua empresa fora de um dos maiores eventos de
-                            tecnologia do Estado de Sergipe!
-                        </span>
-                    </div>
-                    <div class="flex-column  margin-bottom">
-                        <a href="apoie_me.php" class="btn-inscrever-inverse">
-                            <span>Clique Aqui!</span>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
 
         <div class="container container-div margin-bottom" id="patrocinio">

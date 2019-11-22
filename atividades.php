@@ -1,5 +1,6 @@
-<div class="row">
-    <div class="col-md-12">
+<div class="row flex-column">
+<h5 class="card-title titulo-topicos">Atividades</h5>
+    <div class="col-md-12 flex-column">
         <div class="card text-center border-0">
             <div class="card-header bg-white">
                 <ul class="nav nav-tabs card-header-tabs">
@@ -16,7 +17,7 @@
             </div>
             <div class="tab-content">
                 <div class="card-body flex-column "  id="1">
-                    <h5 class="card-title titulo-topicos">Atividades</h5>
+                   
                     <p class="card-text descricao-topico">Em alguns dias divulgaremos nossas atividades!</p>
                 </div>
             </div>

@@ -374,18 +374,33 @@ background-color: #114dbd;
     flex-direction: column;
     justify-content: center;
 }
+
+.detalhe-patrocinador-ouro{
+    top:0;
+    left:0;
+    height: 100%;
+    position:absolute;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .painel-patrocinador:hover{
     cursor: pointer;
 }
 .mais-patrocinadores{
     display: none;
 }
-.img-patrocinador-circulo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 1%;
+.logo-patrocinador-prata{
+    width: 60%;
 }
+
 
 /*==================    FOOTER       ====================*/
 
@@ -500,6 +515,22 @@ footer {
         height: 0; 
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent; 
-      }
+    }
 
+}
+
+
+@media Screen and  (max-width:690px) {
+    .img-ouro{
+        width: 90%;
+        margin-bottom:5px
+    }
+    
+    .logo-patrocinador-prata{
+        width: 100%;
+    }
+    .img-prata{
+        width: 0%;
+        margin-bottom:5px
+    }
 }

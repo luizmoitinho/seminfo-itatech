@@ -1,6 +1,9 @@
 $('.detalhe-patrocinador').hide();
+$('.detalhe-patrocinador-ouro').hide();
 $('#tipos-patrocinios').hide();
-/*$("#painel-cronometro").hide();
+
+/*
+$("#painel-cronometro").hide();
 $('body').hide();
 
 $(document).ready(function(){
@@ -24,9 +27,12 @@ if(document.getElementById('cronometro')){
 
 
 $(".logo-patrocinador").on('mouseenter',function(response){
-    $(this).children('.detalhe-patrocinador').fadeIn(400)
+    $(this).children('.detalhe-patrocinador-ouro').fadeIn(400) 
+    $(this).children('.detalhe-patrocinador').fadeIn(400) 
 });
+
 $(".logo-patrocinador").on('mouseleave',function(response){
+    $(this).children('.detalhe-patrocinador-ouro').fadeToggle(400) 
     $(this).children('.detalhe-patrocinador').fadeToggle(400)
 });
 
@@ -38,7 +44,6 @@ $('#btn-ver-mais').click(function(){
     else{
         $('#btn-ver-mais').text('+ Ver mais');
         $('.mais-patrocinadores').slideUp();
-    
     }
 });
 
@@ -75,7 +80,7 @@ function getCronometro(cronometro) {
             cronometro(res);
         },
         error: function () {
-            alert('Ocorreu um problema na conexao ! :/');
+           
         }
     });
 }

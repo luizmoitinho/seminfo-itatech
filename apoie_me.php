@@ -28,7 +28,7 @@
                     <Textarea class="form-group col-md-12 item-contato border" name="msg" rows="5"
                         placeholder="Digite aqui alguma dúvida ou informação"></Textarea>
                     <button class="btn-inscrever-inverse">Enviar</button>
-                </form>
+                </form>zz
                 <?php  if (array_key_exists('status',$_GET)):
                         if($_GET['status']=='sucesso'): ?>
                             <div class="alert alert-success" role="alert">

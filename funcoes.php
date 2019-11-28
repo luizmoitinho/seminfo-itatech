@@ -36,14 +36,12 @@ function HorasRestantes(){
     $Resto = $Resto % 3600;
     return $horaAtual; 
 }
-
 function MinutosRestantes(){
     global $Resto;
     $minutoAtual = floor($Resto/60);
     $Resto = $Resto % 60;
     return $minutoAtual;
 }
-
 function SegundosRestantes(){
     global $Resto;
     return $Resto;

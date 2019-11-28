@@ -2,9 +2,10 @@ $('.detalhe-patrocinador').hide();
 $('.detalhe-patrocinador-ouro').hide();
 $('#tipos-patrocinios').hide();
 
-/*
+
 $("#painel-cronometro").hide();
 $('body').hide();
+
 
 $(document).ready(function(){
  setTimeout(function(){
@@ -14,7 +15,7 @@ $(document).ready(function(){
         $("#painel-cronometro").fadeIn(1000)
     },1500)
 
-})*/
+})
 
 if(document.getElementById('cronometro')){
     
@@ -23,6 +24,72 @@ if(document.getElementById('cronometro')){
     }, 1000);
     
     showCronometro();
+}
+
+$('#fale-conosco').click(function(){
+    if(validarInputs()){
+        var _nome =$('#nome').val();
+        var _email =$('#email').val();
+        var _telefone =$('#telefone').val();
+        var _opcoes =  $('#opcoes option:selected').val();
+        var _msg =$('#msg').val();
+
+        var data = { nome:_nome, email:_email,telefone:_telefone,opcoes:_opcoes, msg:_msg};
+        
+        $.post(
+            'enviar_email.php', //Required URL of the page on server
+            data,
+            function(html,status){
+                if(status == "success"){   
+                    $("#status-envio").html(html);
+                    $('#nome').val('');
+                    $('#email').val('');
+                    $('#telefone').val('');
+                    $('#opcoes option:selected').val('');
+                    $('#msg').val('');
+                }    	
+            }
+        );
+       
+    }
+})
+
+function validarInputs(){
+    let validos=true;
+    if($('#nome').val()==""){
+        $('#nome').css('border','1px solid red')
+        validos =false;
+    }
+    else
+        $('#nome').css('border','none')
+    
+
+    if($('#email').val()==""){
+        $('#email').css('border','1px solid red')
+        validos =false;
+    }
+    else
+        $('#email').css('border','none')
+
+    if($('#telefone').val()==""){
+        $('#telefone').css('border','1px solid red')
+        validos =false;
+    }
+    else
+        $('#telefone').css('border','none')
+
+
+    if($('#msg').val()==""){
+        $('#msg').removeClass('border');
+        $('#msg').css('border','1px solid red')
+        validos =false;
+    }
+    else
+        $('#msg').addClass('border')
+
+    return validos;
+    
+
 }
 
 
@@ -72,6 +139,8 @@ function atualizarCronometro() {
         document.getElementById('seg').textContent = cronometro['seg'];
     });
 }
+
+
 function getCronometro(cronometro) {
     $.ajax({
         url: "funcoes.php",

@@ -30,13 +30,13 @@ $email_to = 'contato@itatechjr.com.br';
 // Enviando email
 $status = mail($email_to, mb_encode_mimeheader($subject, "utf-8"), $corpo, $headers);
 
-if ($status){
+if ($status)
+    echo "<div class='alert alert-success flex-column' role='alert'>
+                Obrigado por entrar em contato! Nossa equipe analisará as informações.
+            </div>";
+else
+    echo " <div class='alert alert-danger align-middle' role='alert'>
+             Ocorreu um erro ao entrar em contato conosco. Tente novamente, mais tarde!
+            </div>";
 
-  header('location:apoie_me.php?status=sucesso');
-}
-else{
-    header('location:apoie_me.php?status=erro');
-}
-
- 
 ?>

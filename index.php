@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="container margin-bottom container-card" id="sobre">
+        <div class="flex-column ">
             <?php  require_once('atividades.php')?>
         </div>
         <div class="container container-div">
@@ -113,7 +113,7 @@
                         <img src="assets/img/diamante/lindolar.png" class=" rounded-lg img-fluid img-diamante">
                         <div class="detalhe-patrocinador container ">
                             <div class="flex-column">
-                                <span class="font-weight-bold">R. Antônio Dutra, 720 - Centro, Itabaiana</span> 
+                                <span class="descricao-pt">R. Antônio Dutra, 720 - Centro, Itabaiana</span> 
                             </div>
                         </div>
                     </div>
@@ -121,10 +121,10 @@
 
                 <div class="col-md-3 painel-patrocinador">
                     <div class="logo-patrocinador">
-                        <img src="assets/img/diamante/real.jpg" class=" rounded-lg img-fluid img-diamante">
+                        <img src="assets/img/diamante/Real.jpg" class=" rounded-lg img-fluid img-diamante">
                         <div class="detalhe-patrocinador container ">
                             <div class="flex-column">
-                                <span class="font-weight-bold"> Praça João Pessoa, 59 - Centro, Itabaiana</span> 
+                                <span class="descricao-pt"> Praça João Pessoa, 59 - Centro, Itabaiana</span> 
                             </div>
                         </div>
                     </div>

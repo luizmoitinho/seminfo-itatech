@@ -30,9 +30,25 @@
                     </div>
                     <Textarea class="form-group col-md-12 item-contato border"  name="msg" id="msg" rows="5"
                         placeholder="Digite aqui alguma dúvida ou informação"></Textarea>
+<<<<<<< HEAD
                 </form>
                 <button class="btn-lg btn-inscrever-inverse" id="fale-conosco">Enviar</button>
                 
+=======
+                    <button class="btn-inscrever-inverse">Enviar</button>
+                </form>zz
+                <?php  if (array_key_exists('status',$_GET)):
+                        if($_GET['status']=='sucesso'): ?>
+                            <div class="alert alert-success" role="alert">
+                                Obrigado por entrar em contato! Nossa equipe analisará as informações.
+                            </div>
+                        <?php else: ?>
+                            <div class="alert alert-danger" role="alert">
+                                Ocorreu um erro ao entrar em contato conosco. Tente novamente, mais tarde!
+                            </div>
+                        <?php endif;?>
+                <?php endif;?>
+>>>>>>> 52fd6e1f2db7e01f96f41cb5285eff34a91f297e
             </div>
     
         </div>

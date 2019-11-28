@@ -94,7 +94,7 @@ body{
     background: #fff;
     box-shadow: 2px 2px 5px #ccc;
 }
-.
+
 /* ==========================  barra navegacao ======================*/
 #header {
     padding-left: 5%;
@@ -573,7 +573,14 @@ footer {
         width: 90%;
         margin-bottom:5px
     }
+<<<<<<< HEAD
 
+=======
+    .logo-patrocinador-ouro{
+        width: 100%;
+    }
+    
+>>>>>>> 52fd6e1f2db7e01f96f41cb5285eff34a91f297e
     .logo-patrocinador-prata{
         width: 100%;
     }

@@ -129,45 +129,35 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-3 painel-patrocinador">
+                    <div class="logo-patrocinador">
+                        <img src="assets/img/diamante/MerceariaBarreto.JPG" class=" rounded-lg img-fluid img-diamante">
+                        <div class="detalhe-patrocinador container ">
+                            <div class="flex-column">
+                                <span class="font-weight-bold"> R. Aluizio Almeida Silva, 2217 - Centro, Itabaiana</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 painel-patrocinador">
+                    <div class="logo-patrocinador">
+                        <img src="assets/img/diamante/Walber1.JPG" class=" rounded-lg img-fluid img-diamante">
+                        <div class="detalhe-patrocinador container ">
+                            <div class="flex-column">
+                                <span class="font-weight-bold"> Rua 13 de maio, 95 - Centro, Itabaiana</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--  ouro 
+            <!--  ouro -->
             <div class="container ">
                 <div class="row margin-bottom ">
                     <div class="col-md-2 painel-patrocinador">
                         <div class="logo-patrocinador">
-                            <img src="assets/img/seminfo-logo.png" class="img-fluid">
-                            <div class="detalhe-patrocinador-ouro container">
-                                <div class="flex-column">
-                                    <span class="font-weight-bold">Descrição</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 painel-patrocinador">
-                        <div class="logo-patrocinador">
-                            <img src="assets/img/seminfo-logo.png" class="img-fluid">
-                            <div class="detalhe-patrocinador-ouro container">
-                                <div class="flex-column">
-                                    <span class="font-weight-bold">Descrição</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 painel-patrocinador">
-                        <div class="logo-patrocinador">
-                            <img src="assets/img/seminfo-logo.png" class="img-fluid">
-                            <div class="detalhe-patrocinador-ouro container">
-                                <div class="flex-column">
-                                    <span class="font-weight-bold">Descrição</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 painel-patrocinador">
-                        <div class="logo-patrocinador">
-                            <img src="assets/img/seminfo-logo.png" class="img-fluid">
+                            <img src="assets/img/ouro/vip.jpg" class="img-fluid">
                             <div class="detalhe-patrocinador-ouro container">
                                 <div class="flex-column">
                                     <span class="font-weight-bold">Descrição</span>
@@ -177,10 +167,9 @@
                     </div>
                 </div>
             </div>
-            -->
 
             <!--  prata -->
-                <div class="flex-row margin-bottom justify-content-md-center justify-content-sm-center">
+                <div class="flex-row margin-bottom justify-content-md-center">
                     <div class="col-sm-2">
                         <div class="logo-patrocinador-prata">
                             <img src="assets/img/prata/Alpha.jpg" class="img-fluid img-prata">

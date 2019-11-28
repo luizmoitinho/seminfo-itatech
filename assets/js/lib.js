@@ -2,7 +2,7 @@ $('.detalhe-patrocinador').hide();
 $('.detalhe-patrocinador-ouro').hide();
 $('#tipos-patrocinios').hide();
 
-
+/*
 $("#painel-cronometro").hide();
 $('body').hide();
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#painel-cronometro").fadeIn(1000)
     },1500)
 
-})
+})*/
 
 if(document.getElementById('cronometro')){
     
@@ -104,13 +104,13 @@ $(".logo-patrocinador").on('mouseleave',function(response){
 });
 
 $('#btn-ver-mais').click(function(){
-    if($('.mais-patrocinadores').css("display")=="none"){
+    if($('.detalhes-cursos').css("display")=="none"){
         $('#btn-ver-mais').text('- Esconder');
-        $('.mais-patrocinadores').slideDown();
+        $('.detalhes-cursos').slideDown();
     }
     else{
-        $('#btn-ver-mais').text('+ Ver mais');
-        $('.mais-patrocinadores').slideUp();
+        $('#btn-ver-mais').text('+ Ver Mais Detalhes');
+        $('.detalhes-cursos').slideUp();
     }
 });
 

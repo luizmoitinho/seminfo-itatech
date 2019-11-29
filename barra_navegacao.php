@@ -13,16 +13,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
                 <ul class="nav navbar-nav">
                         <li>
-                            <a href="index.php"class=" links" >Home</a>
+                            <a href="#minicursos"class=" links" >Programação</a>
                         </li>
                         <li>
                             <a href="#sobre"class=" links" >Sobre</a>
                         </li>
                         <li>
-                            <a href="#patrocinio" class=" links">Patrocinadores</a>
+                            <a href="#patrocinadores" class=" links">Patrocinadores</a>
                         </li>
                         <li>
-                            <a href="#localizacao" class=" links">Local</a>
+                            <a href="#fale_conosco" class=" links">Fale Conosco</a>
                         </li>
                 </ul>
         </div>

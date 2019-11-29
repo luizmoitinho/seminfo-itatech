@@ -2,7 +2,7 @@ $('.detalhe-patrocinador').hide();
 $('.detalhe-patrocinador-ouro').hide();
 $('#tipos-patrocinios').hide();
 
-/*
+
 $("#painel-cronometro").hide();
 $('body').hide();
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#painel-cronometro").fadeIn(1000)
     },1500)
 
-})*/
+})
 
 if(document.getElementById('cronometro')){
     

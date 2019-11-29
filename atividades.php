@@ -1,4 +1,4 @@
-<div class="container flex-column margin-bottom bg-white container-div">
+<div class="container-fluid flex-column margin-bottom bg-white container-div">
     <div class="flex-column">
         <span class="titulo-topicos">Palestras</span>
     </div>
@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<div class="container container-div margin-bottom bg-white">
+<div class="container-fluid container-div margin-bottom bg-white" id="minicursos">
 
     <div class="row">
         <div class="flex-column">
@@ -54,10 +54,10 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Locais</th>
-                        <th scope="col">Ter, 11/12</th>
-                        <th scope="col">Qua, 12/12</th>
-                        <th scope="col">Qui, 13/12</th>
-                        <th scope="col">Sex, 14/12</th>
+                        <th scope="col">Ter, 10/12</th>
+                        <th scope="col">Qua, 11/12</th>
+                        <th scope="col">Qui, 12/12</th>
+                        <th scope="col">Sex, 13/12</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -93,8 +93,34 @@
             </table>
 
     </div>
-    <div class="col-md-12">
-        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeyNq1i1LRXSYq1sY-Ue5bxYXF8xUPF_IGkb7ag6ftFf15ChA/viewform"><span class="btn btn-lg btn-success">Inscrever</span></a>
+    <div class="flex-column margin-bottom">
+        <div class="area-btns col-md-12 margin-bottom">
+            <div class="margin-bottom">
+                <h3 class="font-weight-normal">Inscreva-se</h3>
+            </div>
+            <div class="flex-row">
+                <div class="col-md-4">
+                    <a href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao"
+                                target="_blank" >
+                        <div class="btn-seminfo disabled">
+                            SEMINFO
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeyNq1i1LRXSYq1sY-Ue5bxYXF8xUPF_IGkb7ag6ftFf15ChA/viewform">
+                        <div class="btn-minicursos">Minicursos</div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScw5xPd3J7oMmC-N_ofxI2AHBuXWf84gzQfIDFf2Ua-KEO3Cg/viewform">
+                    <div class="btn-maratona">Maratona de Programação</div>
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="col-md-12 border-top">
+        <span class="font-weight-light">Clique nos botões para se inscrever nos eventos!! ;)</span>
     </div>
     
 </div>

@@ -8,7 +8,7 @@
     font-family: 'Ubuntu', sans-serif,  !important;
 }
 a{text-decoration:none;}
-a:link{font-size: 20px;}
+a:link{font-size: 20px;text-decoration:none;}
 a:hover{text-decoration:none;}
 
 
@@ -96,7 +96,7 @@ body{
 }
 
 .img-diamante{
-    width:200px;
+    width:200px;    
     height: 200px;
 }
 .img-ouro{
@@ -107,6 +107,74 @@ body{
     width:140px;
     height: 120px;
 }
+.btn-seminfo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height:60px;
+    background-color: #9bcc32;
+    border-radius: 6px;
+    color:#fff; 
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+.btn-seminfo:hover{
+    transition-duration: 0.5s;
+    background-color: #fff;
+    border:1px solid #9bcc32;
+    color:#9bcc32;
+}
+
+.btn-minicursos{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height:60px;
+    background-color: #777777;
+    border-radius: 6px;
+    color:#fff; 
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.btn-minicursos:hover{
+    transition-duration: 0.5s;
+    background-color: #fff;
+    border:1px solid #777777;
+    color:#777777;
+}
+
+.btn-maratona{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height:60px;
+    background-color: #6ec9fe;
+    border-radius: 6px;
+    color:#fff; 
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+.btn-maratona:hover{
+    transition-duration: 0.5s;
+    background-color: #fff;
+    border:1px solid #6ec9fe;
+    color:#6ec9fe;
+}
+.area-btns{
+    padding:2%;
+    border:1px solid #777777;
+    border-radius:20px
+}
+
+
+.area-btns a:link{text-decoration:none;}
 /* ==========================  barra navegacao ======================*/
 #header {
     padding-left: 5%;
@@ -208,7 +276,7 @@ background-color: #114dbd;
     background: url("img/bg-sinapse.jpg") fixed right bottom ;
     background-repeat: no-repeat;
     background-size: auto;
-    height: 500px;
+    height: 400px;
     padding:0;
    
 }
@@ -217,14 +285,14 @@ background-color: #114dbd;
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 500px;
+    height: 400px;
     opacity: 0.6;
 }
 #painel-cronometro{
     text-align: center;
     position: relative;
-    margin-top: -450px;
-    margin-bottom: 8%;
+    margin-top: -360px;
+    margin-bottom: 50px;
     font-size: 28px;
     color:#fff
 }
@@ -490,6 +558,16 @@ footer {
 
 
 @media (max-width:998px) {
+    .background{
+        height: 350px;
+    }
+    .painel-principal{
+        height: 350px;
+    }
+    #painel-cronometro{
+        margin-top: -315px;
+    }
+
     .descricao-topico{
         font-size: 22px;
         font-weight: 200;
@@ -524,18 +602,37 @@ footer {
         width:110px;
         height: 90px;
     }
+
+    .btn-minicursos{
+        font-size:14px;
+        width: 100px;
+        height:60px;
+    
+    }
+    
+    .btn-seminfo{
+        font-size:14px;
+        width: 100px;
+        height:60px;
+    
+    }
+    .btn-maratona{
+        font-size:14px;
+        width: 100px;
+        height:60px;
+    
+    }
 }
 
 @media Screen and  (max-width:690px) {
     .background{
-        height: 400px;
+        height: 320px;
     }
     .painel-principal{
-
-        height: 400px;
+        height: 320px;
     }
     #painel-cronometro{
-        margin-top: -400px;
+        margin-top: -300px;
     }
 
     .destaque-seminfo{
@@ -606,11 +703,41 @@ footer {
         width:120px;
         height: 100px;
     }
+
+ 
+    .btn-minicursos{
+        font-size:13px;
+        width: 90px;
+        height:60px;
+    
+    }
+    
+    .btn-seminfo{
+        font-size:13px;
+        width: 90px;
+        height:60px;
+    
+    }
+    .btn-maratona{
+        font-size:13px;
+        width: 90px;
+        height:60px;
+    
+    }
  
 }
 
 
 @media Screen and  (max-width:590px) {
+    .background{
+        height: 400px;
+    }
+    .painel-principal{
+        height: 400px;
+    }
+    #painel-cronometro{
+        margin-top: -355px;
+    }
     .descricao-pt{
         font-size:12px,!important
     }
@@ -633,7 +760,25 @@ footer {
     .minicursos th{
         font-size:13px
     }
-
+    .btn-minicursos{
+        font-size:12px;
+        width: 90px;
+        height:60px;
+    
+    }
+    
+    .btn-seminfo{
+        font-size:13px;
+        width: 90px;
+        height:60px;
+    
+    }
+    .btn-maratona{
+        font-size:13px;
+        width: 90px;
+        height:60px;
+    
+    }
     
 }
 
@@ -652,7 +797,28 @@ footer {
         width:70px;
         height: 60px;
     }
-
+    .area-btns{
+        padding: 10px;
+    }
+    .btn-minicursos{
+        font-size:12px;
+        width: 75px;
+        height:40px;
+    
+    }
+    
+    .btn-seminfo{
+        font-size:12px;
+        width: 75px;
+        height:40px;
+    
+    }
+    .btn-maratona{
+        font-size:12px;
+        width: 80px;
+        height:40px;
+    
+    }
 
     
 }

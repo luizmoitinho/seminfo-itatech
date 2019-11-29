@@ -13,6 +13,9 @@
         </div>
     </div>
     <main>
+        
+        
+
         <div class="container-fluid">
             <div class="row ">
                 <div id="painel-cronometro" class="col-md-12">
@@ -49,17 +52,13 @@
                         <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de
                             Itabaiana.</span>
                     </div>
-                    <a href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao"
-                        target="_blank" class="btn-inscrever">
-                        <span>Inscreva-se</span>
-                    </a>
                 </div>
             </div>
         </div>
         <div class="flex-column ">
             <?php  require_once('atividades.php')?>
         </div>
-        <div class="container container-div">
+        <div class="container-fluid container-div" id="sobre">
             <div class="flex-column">
                 <span class="titulo-topicos">Sobre</span>
             </div>
@@ -79,10 +78,9 @@
                 <div class="col-md-4 flex-column">
                     <img src="assets/img/conjunto.png">
                 </div>
-
             </div>
         </div>
-        <div class="container margin-bottom " id="localizacao">
+        <div class="container-fluid margin-bottom " id="localizacao">
             <div class="flex-column">
             </div>
             <div class="row">
@@ -104,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid container-div margin-bottom">
+        <div class="container-fluid container-div margin-bottom" id="patrocinadores">
             <span class="titulo-topicos">Patrocinadores</span>
             <!--  diamante -->
             <div class="row  justify-content-center margin-bottom ">

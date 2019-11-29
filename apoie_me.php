@@ -1,8 +1,8 @@
-<div class="container-fluid bg-white ">
+<div class="container-fluid bg-white">
     <div class="row margin-bottom">
         <div class="col-md-12">
-            <div class="flex-column margin-bottom-1">
-                <h1 class="">Fale conosco!</h1>
+            <div class="flex-column margin-bottom-1" id="fale_conosco">
+                <span class="titulo-topicos">Fale conosco!</span>
                 
                 <form class="form-group col-md-5 flex-column"  id="formulario_contato">
                     <div id="status-envio" align="center">

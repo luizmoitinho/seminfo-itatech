@@ -1,6 +1,3 @@
-$('.detalhe-patrocinador').hide();
-$('.detalhe-patrocinador-ouro').hide();
-$('#tipos-patrocinios').hide();
 
 
 $("#painel-cronometro").hide();
@@ -16,6 +13,8 @@ $(document).ready(function(){
     },1500)
 
 })
+
+
 
 if(document.getElementById('cronometro')){
     

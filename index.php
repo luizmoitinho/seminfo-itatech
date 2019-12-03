@@ -58,7 +58,7 @@
         <div class="flex-column ">
             <?php  require_once('atividades.php')?>
         </div>
-        <div class="container-fluid container-div" id="sobre">
+        <div class="container container-div" id="sobre">
             <div class="flex-column">
                 <span class="titulo-topicos">Sobre</span>
             </div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid margin-bottom " id="localizacao">
+        <div class="container margin-bottom " id="localizacao">
             <div class="flex-column">
             </div>
             <div class="row">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid container-div margin-bottom" id="patrocinadores">
+        <div class="container container-div margin-bottom" id="patrocinadores">
             <span class="titulo-topicos">Patrocinadores</span>
             <!--  diamante -->
             <div class="row  justify-content-center margin-bottom ">

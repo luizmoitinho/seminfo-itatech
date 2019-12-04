@@ -1,6 +1,8 @@
 
-
+/*
 $("#painel-cronometro").hide();
+
+$('#slogan').hide();
 $('body').hide();
 
 
@@ -9,13 +11,11 @@ $(document).ready(function(){
      $("body").fadeIn(1000)
      },1500);
     setTimeout(function(){
-        $("#painel-cronometro").fadeIn(1000)
+        $("#painel-cronometro").fadeIn(1000),
+        $("#slogan").fadeToggle(1000)
     },1500)
-
 })
-
-
-
+*/
 if(document.getElementById('cronometro')){
     
     this.setInterval(function () {
@@ -153,12 +153,9 @@ function getCronometro(cronometro) {
     });
 }
 
-
 function showCronometro() {
     $("#cronometro").slideDown("slow");
 }
-
-
 
 function selecionaPatrocinio(){
     let checkbox =  document.getElementById("patrocinio");

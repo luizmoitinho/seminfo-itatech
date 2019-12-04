@@ -5,28 +5,20 @@
 
 <body class="bg-cinza-light">
     <?php require_once("barra_navegacao.php")?>
-    <div class="container-fluid  background">
-        <div class="row">
-            <div class="painel-principal">
-
-            </div>
-        </div>
-    </div>
     <main>
-        
-        
-
-        <div class="container-fluid">
+        <div class="container-fluid margin-bottom  background">
+            <div class="row justify-content-end" id="placar-data">
+                <div class="data-seminfo flex-column" >
+                    <div>11 a 13 de Dezembro</div>
+                    <div class="detalhe-data">UFS Itabaiana</div>
+                </div> 
+            </div>
             <div class="row ">
                 <div id="painel-cronometro" class="col-md-12">
-                    <div class="flex-column">
-                        <span class="destaque-seminfo"> VI SEMINFO 2019 - Evento de Tecnologia</span>
-                        <span id="slogan">
-                            Matenha-se conectado nas tecnologias da área de TI
-                        </span>
-                        <span id="slogan">
-                            com Palestras e Cursos!
-                        </span>
+                    <div class="flex-column ">
+                        <span class="destaque-seminfo margin-bottom"> VI SEMINFO 2019 - Tecnologia e Empreendedorismo</span>
+                        <p id="slogan" class="col-md-9">
+                        O Departamento de Sistemas de Informação (DSI) e a ItatechJr promovem, anualmente, a SEMINFO (Semana de Informática). Serão desenvolvidas palestras, minicursos e uma maratona de programação com o intuito de apresentar, motivar e integrar alunos e empresas da área de computação.                        </p>
                     </div>
                     <div id="cronometro" class="flex-column">
                         <div class="flex-row">
@@ -49,36 +41,35 @@
                             </div>
                             <div id="triangulo-para-esquerda"></div>
                         </div>
-                        <span id="data-seminfo">Nos dias 11, 12 e 13 de Dezembro no Campus da UFS de
-                            Itabaiana.</span>
+                        
+                    </div>   
+                
+
+                   
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="container container-div">
+            <div class="row">
+                <div class="col-md-6 flex-column">
+                    <span class="titulo-topicos">Realização</span>
+                    <img src="assets/img/conjunto.png">
+                </div>
+                <div class="col-md-6 flex-column">
+                <span class="titulo-topicos">Apoio</span>
+                    ​<div class="col-md-6 margin-bottom-1 flex-column">
+                        <source srcset="assets/img/diamante/lindolar.png" type="image/svg+xml">
+                        <img src="assets/img/Fabrica de Software 2.png" class="img-fluid rounded" alt="...">
                     </div>
+                    
+                  
                 </div>
             </div>
         </div>
         <div class="flex-column ">
             <?php  require_once('atividades.php')?>
-        </div>
-        <div class="container container-div" id="sobre">
-            <div class="flex-column">
-                <span class="titulo-topicos">Sobre</span>
-            </div>
-            <div class="row">
-                <div class="col-md-8 ">
-                    <p class="descricao-topico">
-                        A Semana de Informática da Universidade Federal de Sergipe – Campus
-                        Itabaiana – é um simpósio organizado pela Universidade Federal de Sergipe – UFS apoiado
-                        pela Itatech Jr.(empresa Júnior, formada por alunos) e com o apoio dos professores e
-                        alunos do curso Sistemas de Informação que visa proporcionar aos participantes acesso a
-                        novos conhecimentos, conceitos e novas tecnologias, por intermédio de palestras e
-                        minicursos. Proporcionando assim, uma integração entre os alunos do curso de Sistemas de
-                        Informação da UFS - Itabaiana com alunos e profissionais de outras localidades e
-                        instituições.
-                    </p>
-                </div>
-                <div class="col-md-4 flex-column">
-                    <img src="assets/img/conjunto.png">
-                </div>
-            </div>
         </div>
         <div class="container margin-bottom " id="localizacao">
             <div class="flex-column">
@@ -110,52 +101,62 @@
                     <source srcset="assets/img/diamante/lindolar.png" type="image/svg+xml">
                     <img src="assets/img/diamante/lindolar.png" class="img-diamante rounded" alt="...">
                 </div>
-    ​            <picture class="col-md-3  col-5 margin-bottom-1 flex-column">
+                ​ <picture class="col-md-4  col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/Real.jpg" type="image/svg+xml">
                     <img src="assets/img/diamante/Real.jpg" class="img-diamante rounded" alt="...">
                 </picture>
-                <picture class="col-md-3 col-5 margin-bottom-1 flex-column">
+                <picture class="col-md-4 col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/MerceariaBarreto.JPG" type="image/svg+xml">
                     <img src="assets/img/diamante/MerceariaBarreto.JPG" class="img-diamante rounded" alt="...">
                 </picture>
-                <picture class="col-md-3  col-5 margin-bottom-1 flex-column">
+                <picture class="col-md-4  col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/Walber1.JPG" type="image/svg+xml">
-                    <img src="assets/img/diamante/Walber1.JPG" class="img-diamante rounded" alt="...">
+                    <img src="assets/img/diamante/Walber1.JPG" class="img-diamante-larga rounded" alt="...">
                 </picture>
-               
-            </div>         
+
+            </div>
             <!--  ouro   -->
             <div class="row d-flex justify-content-center margin-bottom">
-                <picture class="col-md-12 col-12">
+            <picture class="col-md-4 col-4">
+                    <source srcset="assets/img/ouro/CentralNet.jpg" type="image/svg+xml">
+                    <img src="assets/img/ouro/Vip.jpg" class="img-ouro rounded" alt="...">
+                </picture>
+                <picture class="col-md-4 col-4 flex-column">
+                    <source srcset="assets/img/ouro/ProCunha.jpg" type="image/svg+xml">
+                    <img src="assets/img/ouro/Vip.jpg" class="img-ouro-larga rounded" alt="...">
+                </picture>
+                <picture class="col-md-4 col-4">
                     <source srcset="assets/img/ouro/Vip.jpg" type="image/svg+xml">
                     <img src="assets/img/ouro/Vip.jpg" class="img-ouro rounded" alt="...">
-                </picture>      
-            </div> 
+                </picture>
+           
+                
+            </div>
             <!--  prata-->
             <div class="row d-flex justify-content-center ">
-                    <div class="col-md-3 col-3">
-                        <div class="logo-patrocinador-prata">
-                            <img src="assets/img/prata/Alpha.jpg" class="img-fluid img-prata">
-                        </div>
+                <div class="col-md-3 col-3">
+                    <div class="logo-patrocinador-prata">
+                        <img src="assets/img/prata/Alpha.jpg" class="img-fluid img-prata">
                     </div>
-                    <div class="col-md-3 col-3">
-                        <div class="logo-patrocinador-prata ">
-                            <img src="assets/img/prata/CStech.jpg" class="img-fluid img-prata">
-                        </div>
+                </div>
+                <div class="col-md-3 col-3">
+                    <div class="logo-patrocinador-prata ">
+                        <img src="assets/img/prata/CStech.jpg" class="img-fluid img-prata">
                     </div>
-                    <div class="col-md-3 col-3">
-                        <div class="logo-patrocinador-prata ">
-                            <img src="assets/img/prata/IrmaosPeixoto.jpg" class="img-fluid img-prata">
-                        </div>
+                </div>
+                <div class="col-md-3 col-3">
+                    <div class="logo-patrocinador-prata ">
+                        <img src="assets/img/prata/IrmaosPeixoto.jpg" class="img-fluid img-prata">
                     </div>
-                    <div class="col-md-3 col-3">
-                        <div class="logo-patrocinador-prata ">
-                            <img src="assets/img/prata/NunesPeixoto.jpg" class="img-fluid img-prata">
-                        </div>
+                </div>
+                <div class="col-md-3 col-3">
+                    <div class="logo-patrocinador-prata ">
+                        <img src="assets/img/prata/NunesPeixoto.jpg" class="img-fluid img-prata">
                     </div>
-            </div> 
+                </div>
+            </div>
 
-        </div>  
+        </div>
         <!-- apoie-me -->
         <?php require_once("apoie_me.php");?>
     </main>

@@ -54,7 +54,7 @@ body{
     height: 0; 
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-        border-left: 25px solid rgb(232, 248, 6);
+        border-left: 25px solid #c2fb00;
         position: relative;
 }
 #triangulo-para-esquerda {
@@ -62,7 +62,7 @@ body{
     height: 0; 
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent; 
-    border-right:25px solid  rgb(232, 248, 6); 
+    border-right:25px solid  #c2fb00; 
     position: relative;
   }
 
@@ -101,9 +101,17 @@ body{
     width:200px;    
     height: 200px;
 }
+.img-diamante-larga{
+    width:250px;
+    height: 120px;
+}
 .img-ouro{
-    width:180px;
+    width:200px;
     height: 150px;
+}
+.img-ouro-larga{
+    width:250px;
+    height: 120px;
 }
 .img-prata{
     width:140px;
@@ -122,12 +130,6 @@ body{
     font-weight: 600;
     transition-duration: 0.5s;
     cursor: not-allowed;
-}
-.btn-seminfo:hover{
-   /* transition-duration: 0.5s;
-    background-color: #fff;
-    border:1px solid #9bcc32;
-    color:#9bcc32;*/
 }
 
 .btn-minicursos{
@@ -276,25 +278,17 @@ background-color: #114dbd;
 
 /* ==========================  barra navegacao ======================*/
 .background{
-    background: url("img/bg-sinapse.jpg") fixed right bottom ;
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 400px;
-    padding:0;
-   
+    background: url("img/bg-post.png");
+    background-size: 100%;
+    background-position-y: center;
+    background-position: top;
+    position: relative;
+
 }
 /* ==========================  barra navegacao ======================*/
-.painel-principal{
-    position: absolute;
-    background-color: #000;
-    width: 100%;
-    height: 400px;
-    opacity: 0.6;
-}
 #painel-cronometro{
     text-align: center;
-    position: relative;
-    margin-top: -360px;
+
     margin-bottom: 50px;
     font-size: 28px;
     color:#fff
@@ -302,17 +296,46 @@ background-color: #114dbd;
 #cronometro{
     margin:3%;
 }
+#slogan{
+    font-size: 20px;
+    font-weight: 400;
+}
+.data-seminfo{
+    margin:5px;
+    float: right;
+    flex-direction: column;
+    color: #fffbf6;
+    border:3px solid #fffbf6;
+    font-size:17px;
+    padding-bottom:10px;
+    width:190px;
+    height:100px;
+    font-weight: 500;
+    margin-right:20px;
+}
+.detalhe-data{
+    background-color: #c2fb00;
+    margin-top:10px;
+    width:210px;
+    height:40px;
+    font-size: 25px;
+    padding-left:18px;
+    padding-right:18px;
+    font-weight: 700;
+    color:#000;
+    text-align: center;
+}
 .item-cronometro{
     font-size: 28px;
     margin: 8px;
     font-weight: 500;
 }
 .info-cronometro{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
 }
 .destaque-seminfo{
-    color: #fffb07;
+    color: #fffbf6;
     font-size: 35px;
     font-weight: 700;
 }
@@ -447,7 +470,7 @@ background-color: #114dbd;
 .titulo-topicos{
     font-size: 30px;
     columns: #333333;;
-    font-weight: 800;
+    font-weight: 700;
     font-family: 'Libre Franklin', sans-serif;
     margin:2%;
 }
@@ -603,31 +626,30 @@ footer {
 
 
 @media (max-width:998px) {
-    .background{
-        height: 350px;
+    .data-seminfo{
+        font-size:15px;
+        padding-bottom:8px;
+        height:80px;
     }
-    .painel-principal{
-        height: 350px;
+    .detalhe-data{
+        font-size: 20px;
+        padding-left:10px;
+        padding-right:10px;
+        font-weight: 600;
     }
-    #painel-cronometro{
-        margin-top: -315px;
-    }
+
 
     .descricao-topico{
         font-size: 22px;
         font-weight: 200;
     }
     .destaque-seminfo{
-        font-size: 28px;
+        font-size: 25px;
     }
     #slogan {
-        font-size: 23px;
+        font-size: 17px;
     }
-    #data-seminfo{
-        font-size:20px;
-        text-align: center;
 
-    }
     .minicursos{
         font-size:15px
     }
@@ -637,7 +659,14 @@ footer {
         width:180px;
         height: 160px;
     }
-
+    .img-diamante-larga{
+        width:190px;
+        height: 120px;
+    }
+    .img-ouro-larga{
+        width:200px;
+        height: 100px;
+    }
     .img-ouro{
         width:150px;
         height: 120px;
@@ -670,21 +699,32 @@ footer {
 }
 
 @media Screen and  (max-width:690px) {
-    .background{
-        height: 320px;
+    .data-seminfo{
+        font-size:15px;
+        padding-bottom:5px;
+        width:145px;
+        height:80px;
     }
-    .painel-principal{
-        height: 320px;
-    }
-    #painel-cronometro{
-        margin-top: -300px;
+    .detalhe-data{
+        font-size: 19px;
+        padding-left:4px;
+        padding-right:4px;
+        font-weight: 600;
+        width:170px;
+        height:30px;
     }
 
+    .item-cronometro{
+        font-size:20px
+    }
+    .info-cronometro{
+        font-size:18px
+    }
     .destaque-seminfo{
         font-size: 25px;
     }
     #slogan {
-        font-size: 20px;
+        font-size: 16px;
     }
     #data-seminfo{
         font-size:18px;
@@ -694,12 +734,7 @@ footer {
     #direitos{
         font-size:18px;
     } 
-    .contorno-numeros {
-        font-size: 20px;
-        font-weight: 500;
-        margin:0px;
 
-    }
     .local-maps{
         width:100%;
         height:280px;
@@ -744,6 +779,10 @@ footer {
         width:120px;
         height: 90px;
     }
+    .img-ouro-larga{
+        width:180px;
+        height: 90px;
+    }
     .img-prata{
         width:120px;
         height: 100px;
@@ -774,14 +813,23 @@ footer {
 
 
 @media Screen and  (max-width:590px) {
-    .background{
-        height: 400px;
+    .data-seminfo{
+        font-size:14px;
+        padding-bottom:6px;
+        width:150px;
+        height:80px;
     }
-    .painel-principal{
-        height: 400px;
+    .detalhe-data{
+        font-size: 20px;
+        padding-left:11px;
+        padding-right:11px;
+        font-weight: 500;
+        width:160px;
+        height:40px;
     }
-    #painel-cronometro{
-        margin-top: -355px;
+
+    #cronometro{
+        margin-top:-4px;
     }
     .descricao-pt{
         font-size:12px,!important
@@ -791,9 +839,14 @@ footer {
         width: 100%;
     }
     
-    .img-diamante{
+    .img-diamante-larga{
         width:145px;
         height: 120px;
+    }
+
+    .img-ouro-larga{
+        width:145px;
+        height:60px;
     }
     .img-prata{
         width:90px;
@@ -828,11 +881,31 @@ footer {
 }
 
 @media Screen and  (max-width:390px) {
-
-    
+    .data-seminfo{
+        font-size:13px;
+        padding-bottom:5px;
+        width: 100px;
+        height:80px;
+        text-align: center;
+    }
+    .detalhe-data{
+        font-size: 16px;
+        padding-left:13px;
+        padding-right:13px;
+        font-weight: 600;
+    }
+ 
     .img-diamante{
         width:120px;
+        height: 80px;
+    }
+    .img-diamante-larga{
+        width:125px;
         height: 100px;
+    }
+    .img-ouro-larga{
+        width:120px;
+        height: 60px;
     }
     .img-ouro{
         width:90px;
@@ -862,7 +935,6 @@ footer {
         font-size:12px;
         width: 80px;
         height:40px;
-    
     }
 
     

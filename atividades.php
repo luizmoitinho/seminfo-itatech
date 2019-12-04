@@ -1,6 +1,6 @@
 <div class="container flex-column margin-bottom bg-white container-div">
     <div class="flex-column">
-        <span class="titulo-topicos">Palestras</span>
+        <span class="titulo-topicos" id="palestras">Palestras</span>
     </div>
     <div class="col-md-8 margin-bottom-1 atividades font-weight-normal cronograma-atividade">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -129,11 +129,45 @@
             <div class="tab-pane fade" id="palestra_dia_3" role="tabpanel" aria-labelledby="palestra_dia_3-tab">
                 <div class="painel-palestrantes">
                 
+                     <div class="palestrantes" data-toggle="modal" data-target="#MarcosDosea ">
+                         Marcos Dósea -  <span class="font-weight-bold">(KNUTH) Fábrica de Software da UFS</span>
+                        <span class="horario-palestrantes">08:30 - 9:30</span>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="MarcosDosea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLongTitle">Fábrica de Software da UFS</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <div class="modal-body modal-palestrante">
+                                <div class="modal-titulo-palestrante">Palestrante</div>
+                                <div>Marcos Dósea</div>
+                                <div class="modal-titulo-palestrante">Local</div>
+                                <div>Hall de entrada - Auditório</div>
+                                
+                                <div class="modal-titulo-palestrante">Resumo do currículo</div>
+                                <div class="resumo-curriculo">
+                                Doutorando na área de Engenharia de Software pela Universidade Federal da Bahia. Mestre em Engenharia de Software pela Universidade Federal de Pernambuco (2008). Graduado como Bacharel em Ciência da Computação pela Universidade Federal de Sergipe (2005). Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: Qualidade de Software, Arquitetura de Software, Análise e Projeto de Software, Testes de Software, Melhoria de Processos de Software, Geoprocessamento, Sistemas WEB e Mobile, Inteligência Artificial.                                </div>
+                                 <div class="modal-titulo-palestrante">Data e horário</div>
+                                <div>Sex, 13/12 - 08:30 - 09:30</div>
+                            </div>
+                            <div class="modal-footer">
+                                <span  data-dismiss="modal" class="fechar-modal">Fechar</span>
+                            </div>
+                            </div>
+                        </div>  
+                    </div>
 
                     <div class="palestrantes" data-toggle="modal" data-target="#MarceloDosea ">
                         Esp. Marcelo Dósea Leite - <span class="font-weight-bold">Ecossistemas de inovação</span>
                         <span class="horario-palestrantes">09:30 - 10:30</span>
                     </div>
+
+                
                     <!-- Modal -->
                     <div class="modal fade" id="MarceloDosea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">

@@ -13,10 +13,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="barra-navegacao">
                 <ul class="nav navbar-nav">
                         <li>
-                            <a href="#minicursos"class=" links" >Programação</a>
+                            <a href="#palestras"class=" links" >Palestras</a>
                         </li>
                         <li>
-                            <a href="#sobre"class=" links" >Sobre</a>
+                            <a href="#minicursos"class=" links" >Inscrições</a>
                         </li>
                         <li>
                             <a href="#patrocinadores" class=" links">Patrocinadores</a>

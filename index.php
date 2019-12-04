@@ -51,20 +51,19 @@
             </div>
         </div>
         
-        <div class="container container-div">
+        <div class="container ">
             <div class="row">
-                <div class="col-md-6 flex-column">
+            
+                <div class="col-md-6 flex-column container-div">
                     <span class="titulo-topicos">Realização</span>
                     <img src="assets/img/conjunto.png">
                 </div>
-                <div class="col-md-6 flex-column">
+                <div class="col-md-6 flex-column container-div">
                 <span class="titulo-topicos">Apoio</span>
                     ​<div class="col-md-6 margin-bottom-1 flex-column">
                         <source srcset="assets/img/diamante/lindolar.png" type="image/svg+xml">
                         <img src="assets/img/Fabrica de Software 2.png" class="img-fluid rounded" alt="...">
                     </div>
-                    
-                  
                 </div>
             </div>
         </div>

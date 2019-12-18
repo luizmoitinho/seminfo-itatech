@@ -13,9 +13,9 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
     <!--fiv icon-->
- 
     <link rel="icon" type="image/png" sizes="96x96" href="assets/fiv_icon/favicon64x64.png">
 
-  
-
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
 </head>

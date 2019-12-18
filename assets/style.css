@@ -129,8 +129,15 @@ body{
     color:#fff; 
     font-weight: 600;
     transition-duration: 0.5s;
-    cursor: not-allowed;
+    cursor: pointer;
 }
+.btn-seminfo:hover{
+    border:1px solid #9bcc32;
+    background-color:#fff ;
+    color:#9bcc32; 
+    transition-duration: 0.5s;
+}
+
 
 .btn-minicursos{
     display: flex;

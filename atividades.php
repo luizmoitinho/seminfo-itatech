@@ -1,7 +1,6 @@
 <div class="container flex-column margin-bottom bg-white container-div">
-    <div class="flex-column">
-        <span class="titulo-topicos" id="palestras">Palestras</span>
-    </div>
+    
+    <span class="titulo-topicos" id="palestras">Palestras</span>
     <div class="col-md-8 margin-bottom-1 atividades font-weight-normal cronograma-atividade">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -246,7 +245,6 @@
 </div>
 
 <div class="container container-div margin-bottom bg-white">
-
     <div class="row">
         <div class="flex-column">
             <span class="titulo-topicos"  id="minicursos">Minicursos</span>
@@ -303,7 +301,7 @@
             </div>
             <div class="flex-row">
                 <div class="col-md-4">
-                    <a target="_blank" >
+                    <a target="_blank"  href="https://www.sigaa.ufs.br/sigaa/public/extensao/paginaListaPeriodosInscricoesAtividadesPublico.jsf?aba=p-extensao">
                         <div class="btn-seminfo" >
                             SEMINFO
                         </div>

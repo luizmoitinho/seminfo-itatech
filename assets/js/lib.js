@@ -1,5 +1,5 @@
 
-/*
+
 $("#painel-cronometro").hide();
 
 $('#slogan').hide();
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#slogan").fadeToggle(1000)
     },1500)
 })
-*/
+
 if(document.getElementById('cronometro')){
     
     this.setInterval(function () {

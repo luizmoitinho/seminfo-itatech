@@ -96,18 +96,28 @@
             <span class="titulo-topicos">Patrocinadores</span>
             <!--  diamante -->
             <div class="row  justify-content-center margin-bottom ">
+
+                ​<div class="col-md-3 col-5 margin-bottom-1 flex-column">
+                    <source srcset="assets/img/LOGO ILOGNET NOVO.png" type="image/svg+xml">
+                    <img src="assets/img/LOGO ILOGNET NOVO.png" class="img-diamante-larga " alt="...">
+                </div>
+                ​<div class="col-md-3 col-5 margin-bottom-1 flex-column">
+                    <source srcset="assets/img/LOGO_ITTV_EFEITOS_2018.png" type="image/svg+xml">
+                    <img src="assets/img/LOGO_ITTV_EFEITOS_2018.png" class="img-diamante rounded" alt="...">
+                </div>
                 ​<div class="col-md-3 col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/lindolar.png" type="image/svg+xml">
                     <img src="assets/img/diamante/lindolar.png" class="img-diamante rounded" alt="...">
                 </div>
-                ​ <picture class="col-md-4  col-5 margin-bottom-1 flex-column">
-                    <source srcset="assets/img/diamante/Real.jpg" type="image/svg+xml">
-                    <img src="assets/img/diamante/Real.jpg" class="img-diamante rounded" alt="...">
-                </picture>
                 <picture class="col-md-4 col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/MerceariaBarreto.JPG" type="image/svg+xml">
                     <img src="assets/img/diamante/MerceariaBarreto.JPG" class="img-diamante rounded" alt="...">
                 </picture>
+                ​ <picture class="col-md-4  col-5 margin-bottom-1 flex-column">
+                    <source srcset="assets/img/diamante/Real.jpg" type="image/svg+xml">
+                    <img src="assets/img/diamante/Real.jpg" class="img-diamante rounded" alt="...">
+                </picture>
+              
                 <picture class="col-md-4  col-5 margin-bottom-1 flex-column">
                     <source srcset="assets/img/diamante/Walber1.JPG" type="image/svg+xml">
                     <img src="assets/img/diamante/Walber1.JPG" class="img-diamante-larga rounded" alt="...">
@@ -116,13 +126,13 @@
             </div>
             <!--  ouro   -->
             <div class="row d-flex justify-content-center margin-bottom">
-            <picture class="col-md-4 col-4">
+                <picture class="col-md-4 col-4">
                     <source srcset="assets/img/ouro/CentralNet.jpg" type="image/svg+xml">
-                    <img src="assets/img/ouro/Vip.jpg" class="img-ouro rounded" alt="...">
+                    <img src="assets/img/ouroCentralNet.jpg" class="img-ouro rounded" alt="...">
                 </picture>
                 <picture class="col-md-4 col-4 flex-column">
                     <source srcset="assets/img/ouro/ProCunha.jpg" type="image/svg+xml">
-                    <img src="assets/img/ouro/Vip.jpg" class="img-ouro-larga rounded" alt="...">
+                    <img src="assets/img/ouro/ProCunha.jp" class="img-ouro-larga rounded" alt="...">
                 </picture>
                 <picture class="col-md-4 col-4">
                     <source srcset="assets/img/ouro/Vip.jpg" type="image/svg+xml">
